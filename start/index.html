@@ -34,14 +34,49 @@
       <section class="page-feature" aria-label="Quote form">
         <article class="card page-form-pane" id="quote-card">
           <div class="form-shell">
-            <iframe
-              class="form-embed"
-              src="https://docs.google.com/forms/d/e/1FAIpQLSeukhl6HiPBpMidsAHpCO1EQJLXVNoXlVthpU1UfGu-PAf-uw/viewform?embedded=true"
-              title="Late Checkout request form"
-              loading="lazy"
-            >
-              Loading...
-            </iframe>
+            <form id="quote-form" action="https://script.google.com/macros/s/AKfycbz3D64YwNXKSkAVCWHG1cCcIgIEjqM7bCZSy0yb1RWzg0t9abxZWpt7QMo_orBuaR946A/exec" method="POST" novalidate>
+              <input type="hidden" name="formType" value="start" />
+              <input type="hidden" name="source" value="latecheckouttravel.com/start" />
+              <input type="text" name="website" tabindex="-1" autocomplete="off" style="display:none" />
+              <label>
+                Email address
+                <input name="email" type="email" autocomplete="email" required />
+              </label>
+              <label>
+                Hotel name
+                <input name="hotelName" required />
+              </label>
+              <label>
+                City / country
+                <input name="cityCountry" placeholder="Tokyo, Japan" required />
+              </label>
+              <div class="inline-fields">
+                <label>
+                  Arrival date
+                  <input name="arrivalDate" type="date" required />
+                </label>
+                <label>
+                  Departure date
+                  <input name="departureDate" type="date" required />
+                </label>
+              </div>
+              <div class="inline-fields">
+                <label>
+                  # of adults
+                  <input name="adults" type="number" min="1" value="2" required />
+                </label>
+                <label>
+                  # of children
+                  <input name="children" type="number" min="0" value="0" required />
+                </label>
+              </div>
+              <label>
+                Notes (optional)
+                <textarea name="notes" placeholder="Any preferences or booking details to include?"></textarea>
+              </label>
+              <button type="submit">Submit</button>
+            </form>
+            <p class="status" id="quote-status" role="status" aria-live="polite"></p>
           </div>
         </article>
         <aside class="page-visual page-image-pane" aria-hidden="true">
@@ -49,6 +84,7 @@
         </aside>
       </section>
     </main>
+    <script src="/app.js"></script>
 
     <footer class="site-footer">
     <div class="footer-inner">

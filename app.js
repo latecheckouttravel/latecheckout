@@ -20,7 +20,7 @@ async function submitForm({ formId, statusId, successMessage }) {
     const button = form.querySelector('button[type="submit"]');
     const endpoint = (form.getAttribute("action") || "").trim();
     const unconfigured = !endpoint || /REPLACE_ME/i.test(endpoint);
-    const isGoogleForm = /docs\.google\.com\/forms/i.test(endpoint);
+    const isAppsScript = /script\.google\.com\/macros\/s\//i.test(endpoint);
 
     if (unconfigured) {
       setStatus(
@@ -31,24 +31,27 @@ async function submitForm({ formId, statusId, successMessage }) {
       return;
     }
 
-    if (isGoogleForm) {
-      window.location.assign(endpoint);
-      return;
-    }
-
-    const formData = new FormData(form);
-
     button.disabled = true;
     setStatus(status, "Submitting...", null);
 
     try {
-      const response = await fetch(endpoint, {
-        method: "POST",
-        body: formData,
-        headers: { Accept: "application/json" }
-      });
-      if (!response.ok) {
-        throw new Error("Unable to submit right now.");
+      if (isAppsScript) {
+        const payload = Object.fromEntries(new FormData(form).entries());
+        await fetch(endpoint, {
+          method: "POST",
+          mode: "no-cors",
+          headers: { "Content-Type": "text/plain;charset=utf-8" },
+          body: JSON.stringify(payload)
+        });
+      } else {
+        const response = await fetch(endpoint, {
+          method: "POST",
+          body: new FormData(form),
+          headers: { Accept: "application/json" }
+        });
+        if (!response.ok) {
+          throw new Error("Unable to submit right now.");
+        }
       }
 
       form.reset();
