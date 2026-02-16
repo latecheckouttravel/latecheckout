@@ -1,0 +1,12 @@
+<svg width="480" height="80" viewBox="0 0 480 80" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="late checkout">
+  <style>
+    .brand {
+      font-family: "Playfair Display", serif;
+      font-weight: 500;
+      font-size: 44px;
+      letter-spacing: -0.03em;
+      fill: #FFFFFF;
+    }
+  </style>
+  <text x="0" y="55" class="brand">late checkout</text>
+</svg>

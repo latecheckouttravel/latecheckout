@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1060" viewBox="0 0 1600 1060" role="img" aria-label="Luxury stay terrace illustration">
+  <defs>
+    <linearGradient id="b1" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#c8c0b3"/>
+      <stop offset="100%" stop-color="#a89c89"/>
+    </linearGradient>
+    <linearGradient id="b2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#b9ae9e"/>
+      <stop offset="100%" stop-color="#8e806c"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="1060" fill="url(#b1)"/>
+  <rect y="650" width="1600" height="410" fill="url(#b2)"/>
+  <rect x="120" y="520" width="1320" height="300" rx="18" fill="#5c574f"/>
+  <rect x="180" y="560" width="1200" height="220" rx="10" fill="#e6dfd2"/>
+  <rect x="230" y="600" width="300" height="140" rx="10" fill="#6f6b62"/>
+  <rect x="570" y="600" width="300" height="140" rx="10" fill="#6f6b62"/>
+  <rect x="910" y="600" width="300" height="140" rx="10" fill="#6f6b62"/>
+  <rect x="1320" y="360" width="120" height="420" rx="60" fill="#4f4b45"/>
+  <rect x="104" y="342" width="380" height="210" rx="18" fill="#6a6258"/>
+  <rect x="520" y="342" width="380" height="210" rx="18" fill="#6a6258"/>
+  <rect x="936" y="342" width="380" height="210" rx="18" fill="#6a6258"/>
+  <rect x="240" y="865" width="1140" height="28" rx="14" fill="#23221f" opacity="0.35"/>
+</svg>
