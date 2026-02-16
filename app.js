@@ -8,6 +8,22 @@ async function submitForm({ formId, statusId, successMessage }) {
   const form = document.getElementById(formId);
   const status = document.getElementById(statusId);
   if (!form || !status) return;
+  const arrivalDate = form.querySelector('input[name="arrivalDate"]');
+  const departureDate = form.querySelector('input[name="departureDate"]');
+
+  if (arrivalDate && departureDate) {
+    const syncDepartureDate = () => {
+      const arrivalValue = arrivalDate.value;
+      departureDate.min = arrivalValue || "";
+      if (arrivalValue && (!departureDate.value || departureDate.value < arrivalValue)) {
+        departureDate.value = arrivalValue;
+      }
+    };
+
+    arrivalDate.addEventListener("change", syncDepartureDate);
+    departureDate.addEventListener("focus", syncDepartureDate);
+    syncDepartureDate();
+  }
 
   form.addEventListener("submit", async (event) => {
     event.preventDefault();
