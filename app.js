@@ -20,6 +20,7 @@ async function submitForm({ formId, statusId, successMessage }) {
     const button = form.querySelector('button[type="submit"]');
     const endpoint = (form.getAttribute("action") || "").trim();
     const unconfigured = !endpoint || /REPLACE_ME/i.test(endpoint);
+    const isGoogleForm = /docs\.google\.com\/forms/i.test(endpoint);
 
     if (unconfigured) {
       setStatus(
@@ -27,6 +28,11 @@ async function submitForm({ formId, statusId, successMessage }) {
         "Form endpoint not configured. Add your form endpoint to this form's action attribute.",
         "error"
       );
+      return;
+    }
+
+    if (isGoogleForm) {
+      window.location.assign(endpoint);
       return;
     }
 
