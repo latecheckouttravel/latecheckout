@@ -1,0 +1,16 @@
+<svg width="120" height="120" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+  <rect width="120" height="120" fill="#ECE7DF"/>
+  <text
+    x="60"
+    y="70"
+    text-anchor="middle"
+    dominant-baseline="middle"
+    font-family="Playfair Display, serif"
+    font-weight="500"
+    font-size="52"
+    letter-spacing="-0.02em"
+    fill="#1C1B19"
+  >
+    lc
+  </text>
+</svg>
