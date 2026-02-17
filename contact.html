@@ -5,6 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
     <title>Late Checkout | Contact</title>
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta
+      name="description"
+      content="Contact Late Checkout for luxury hotel booking support, reservation review questions, or partnership inquiries."
+    />
+    <meta property="og:title" content="Contact Late Checkout" />
+    <meta
+      property="og:description"
+      content="Contact Late Checkout for luxury hotel booking support, reservation review questions, or partnership inquiries."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://latecheckouttravel.com/contact.html" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -20,7 +31,8 @@
           <a class="brand-mark" href="/" aria-label="late checkout home">
             <img class="brand-logo" src="/logo-stay.svg" alt="late checkout" />
           </a>
-          <div class="nav-links">
+          <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">Menu</button>
+          <div class="nav-links" id="primary-nav">
             <a href="/">Home</a>
             <a href="/check/">Check my stay</a>
             <a href="/start/">Start my stay</a>
@@ -32,6 +44,19 @@
         <p class="hero-copy">Email us at hello@latecheckouttravel.com for support, questions, or partnership requests.</p>
       </header>
     </main>
+    <script src="/nav.js"></script>
+
+    <section class="partners-strip" aria-label="Preferred partners">
+      <div class="partners-inner">
+        <p class="partners-eyebrow">Preferred Partner Networks</p>
+        <div class="partners-grid">
+          <div class="partner-mark">Virtuoso</div>
+          <div class="partner-mark">Hyatt Prive</div>
+          <div class="partner-mark">Belmond Bellini Club</div>
+          <div class="partner-mark">Four Seasons Preferred Partner</div>
+        </div>
+      </div>
+    </section>
     <footer class="site-footer">
       <div class="footer-inner">
         <a class="footer-brand" href="/" aria-label="late checkout home">
