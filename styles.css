@@ -99,10 +99,48 @@ body {
   border: 1px solid var(--color-border-medium);
   background: #ffffff;
   color: var(--color-text-primary);
-  padding: 8px 14px;
+  width: 44px;
+  height: 44px;
+  padding: 0;
   border-radius: 999px;
-  font-size: var(--text-small);
-  line-height: 1;
+  align-items: center;
+  justify-content: center;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+.hamburger-lines {
+  display: inline-grid;
+  gap: 4px;
+}
+
+.hamburger-lines span {
+  width: 18px;
+  height: 2px;
+  background: currentColor;
+  border-radius: 999px;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.top-nav.menu-open .hamburger-lines span:nth-child(1) {
+  transform: translateY(6px) rotate(45deg);
+}
+
+.top-nav.menu-open .hamburger-lines span:nth-child(2) {
+  opacity: 0;
+}
+
+.top-nav.menu-open .hamburger-lines span:nth-child(3) {
+  transform: translateY(-6px) rotate(-45deg);
 }
 
 .top-nav a {
@@ -1016,16 +1054,20 @@ button:disabled {
 .partner-mark {
   border: 1px solid var(--color-border-light);
   border-radius: 8px;
-  min-height: 88px;
+  min-height: 104px;
   display: grid;
   place-items: center;
   padding: 12px;
-  text-align: center;
-  color: #2a2a2a;
   background: #ffffff;
-  font-family: "Playfair Display", Georgia, serif;
-  font-size: clamp(16px, 2vw, 22px);
-  letter-spacing: 0.02em;
+}
+
+.partner-mark img {
+  display: block;
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  max-height: 64px;
+  object-fit: contain;
 }
 
 .contact-page {
