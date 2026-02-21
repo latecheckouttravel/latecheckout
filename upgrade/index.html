@@ -3,19 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
-    <title>Late Checkout | Start My Stay</title>
+    <title>Late Checkout | Upgrade My Stay</title>
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta
       name="description"
-      content="Start your hotel request with Late Checkout and receive personalized luxury booking options with preferred partner benefits."
+      content="Submit your reservation for review. Late Checkout checks refundable luxury hotel bookings for better rates and partner perks."
     />
-    <meta property="og:title" content="Start My Stay | Late Checkout" />
+    <meta property="og:title" content="Upgrade My Stay | Late Checkout" />
     <meta
       property="og:description"
-      content="Start your hotel request with Late Checkout and receive personalized luxury booking options with preferred partner benefits."
+      content="Submit your reservation for review. Late Checkout checks refundable luxury hotel bookings for better rates and partner perks."
     />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://latecheckouttravel.com/start/" />
+    <meta property="og:url" content="https://latecheckouttravel.com/upgrade/" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -37,22 +37,22 @@
           </button>
           <div class="nav-links" id="primary-nav">
             <a href="/">Home</a>
-            <a href="/upgrade/">Upgrade my stay</a>
-            <a href="/start/" class="is-active">Start my stay</a>
+            <a href="/upgrade/" class="is-active">Upgrade my stay</a>
+            <a href="/start/">Start my stay</a>
             <a href="/faqs.html">FAQs</a>
             <a href="https://latecheckouttravel.substack.com/" target="_blank" rel="noopener noreferrer">Travel Journal</a>
           </div>
         </nav>
-        <h1>Start my stay</h1>
-        <p class="hero-copy">Share your trip details. We'll get back to you with the best offer we can find.</p>
+        <h1>Upgrade my stay</h1>
+        <p class="hero-copy">Provide your reservation details and we'll check for better rates and/or perks for your stay.</p>
       </header>
 
-      <section class="page-feature" aria-label="Quote form">
-        <article class="card page-form-pane" id="quote-card">
+      <section class="page-feature" aria-label="Rate tracking form">
+        <article class="card page-form-pane" id="tracking-card">
           <div class="form-shell">
-            <form id="quote-form" action="https://script.google.com/macros/s/AKfycby35qmPQCQ8vwB0fZcf5Jp6qWxLiJIyu1sRI94ZNizxmF5aGfNn354wz6-JvxECJ5qStQ/exec" method="POST" novalidate>
-              <input type="hidden" name="formType" value="start" />
-              <input type="hidden" name="source" value="latecheckouttravel.com/start" />
+            <form id="tracking-form" action="https://script.google.com/macros/s/AKfycby35qmPQCQ8vwB0fZcf5Jp6qWxLiJIyu1sRI94ZNizxmF5aGfNn354wz6-JvxECJ5qStQ/exec" method="POST" novalidate>
+              <input type="hidden" name="formType" value="check" />
+              <input type="hidden" name="source" value="latecheckouttravel.com/upgrade" />
               <input type="text" name="website" tabindex="-1" autocomplete="off" style="display:none" />
               <label>
                 Email address
@@ -92,11 +92,11 @@
               </label>
               <button type="submit">Submit</button>
             </form>
-            <p class="status" id="quote-status" role="status" aria-live="polite"></p>
+            <p class="status" id="tracking-status" role="status" aria-live="polite"></p>
           </div>
         </article>
-        <aside class="page-visual page-image-pane" aria-hidden="true">
-          <img src="/images/page-2.jpg" alt="" />
+        <aside class="page-visual page-image-pane page-visual-no-bottom" aria-hidden="true">
+          <img src="/images/page-1.jpg" alt="" />
         </aside>
       </section>
     </main>

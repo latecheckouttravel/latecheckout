@@ -303,12 +303,12 @@ h3 {
 
 .home-page .hero-stage .hero-content h1 {
   margin: var(--space-3) 0 var(--space-2);
-  font-size: clamp(56px, 6vw, 84px);
+  font-size: clamp(52px, 5.6vw, 78px);
   line-height: 1.04;
 }
 
 .home-page .hero-stage .hero-copy {
-  font-size: clamp(28px, 3vw, 40px);
+  font-size: clamp(25px, 2.7vw, 36px);
   line-height: 1.35;
   margin: 0 0 var(--space-3);
 }
@@ -1066,8 +1066,24 @@ button:disabled {
   width: auto;
   max-width: 100%;
   height: auto;
-  max-height: 64px;
+  max-height: 58px;
   object-fit: contain;
+}
+
+.partner-mark img[src*="hyatt_prive_vector.webp"] {
+  max-height: 92px;
+}
+
+.partner-mark img[src*="belmond_Partner.webp"] {
+  max-height: 92px;
+}
+
+.partner-mark img[src*="Virtuoso+Member_Vector.webp"] {
+  max-height: 62px;
+}
+
+.partner-mark img[src*="Four_Seasons_Preferred_Partner_Vector.webp"] {
+  max-height: 66px;
 }
 
 .contact-page {
