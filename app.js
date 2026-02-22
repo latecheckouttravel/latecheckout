@@ -27,8 +27,6 @@ async function submitForm({ formId, statusId, successMessage }) {
 
   form.addEventListener("submit", async (event) => {
     event.preventDefault();
-    const honeypot = form.querySelector('input[name="website"]');
-    if (honeypot) honeypot.value = "";
 
     if (!form.checkValidity()) {
       form.reportValidity();
