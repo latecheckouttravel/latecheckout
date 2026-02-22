@@ -53,11 +53,10 @@ async function submitForm({ formId, statusId, successMessage }) {
     try {
       if (isAppsScript) {
         const payload = Object.fromEntries(new FormData(form).entries());
-        await fetch(endpoint, {
-          method: "POST",
-          mode: "no-cors",
-          headers: { "Content-Type": "text/plain;charset=utf-8" },
-          body: JSON.stringify(payload)
+        const query = new URLSearchParams(payload).toString();
+        await fetch(`${endpoint}?${query}`, {
+          method: "GET",
+          mode: "no-cors"
         });
       } else {
         const response = await fetch(endpoint, {
