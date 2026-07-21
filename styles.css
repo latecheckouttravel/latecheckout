@@ -64,6 +64,21 @@ body {
   font-weight: 400;
 }
 
+.about-links {
+  margin-top: var(--space-5);
+  padding-top: var(--space-4);
+  border-top: 1px solid var(--color-border-medium);
+}
+
+.about-links h2 {
+  margin-bottom: var(--space-2);
+}
+
+.about-links a {
+  color: var(--color-accent-hover);
+  text-underline-offset: 0.18em;
+}
+
 .page-shell {
   max-width: var(--container-max);
   margin: 0 auto;
