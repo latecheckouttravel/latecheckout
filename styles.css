@@ -851,17 +851,15 @@ button:disabled {
 }
 
 .faq-grid {
-  gap: var(--space-4);
+  gap: clamp(56px, 7vw, 88px);
 }
 
 .faq-page-divider {
-  width: 100%;
-  border-top: 1px solid var(--color-border-light);
-  margin: 0;
+  display: none;
 }
 
 .faq-list {
-  gap: var(--space-3);
+  gap: 0;
   border-top: none;
   border-bottom: none;
   padding-top: 0;
@@ -869,20 +867,21 @@ button:disabled {
 }
 
 .faq-group-title {
-  margin: 0;
-  font-size: clamp(30px, 2.7vw, 40px);
-  line-height: 1.15;
-  letter-spacing: -0.01em;
+  margin: 0 0 var(--space-4);
+  max-width: 780px;
+  font-size: clamp(38px, 4vw, 56px);
+  line-height: 1.08;
+  letter-spacing: -0.025em;
   font-family: "Playfair Display", Georgia, serif;
   font-weight: 500;
 }
 
 .faq-item {
-  border-top: none;
+  border-top: 1px solid var(--color-border-medium);
 }
 
 .faq-item:last-of-type {
-  border-bottom: none;
+  border-bottom: 1px solid var(--color-border-medium);
 }
 
 .faq-item summary {
@@ -892,7 +891,7 @@ button:disabled {
   align-items: center;
   justify-content: space-between;
   gap: var(--space-2);
-  padding: 6px 0;
+  padding: 18px 0;
   font-size: var(--text-body-lg);
   line-height: var(--text-body-line);
   font-family: "Inter", "Avenir Next", "Segoe UI", sans-serif;
@@ -918,15 +917,69 @@ button:disabled {
 
 .faq-answer {
   margin: 0;
-  padding: 0;
-  max-width: 100%;
+  padding: 0 48px 20px 0;
+  max-width: 940px;
   color: var(--color-text-secondary);
   font-size: var(--text-body);
   line-height: var(--text-body-line);
 }
 
-.faq-item + .faq-item {
+.faq-answer p {
+  margin: 0;
+}
+
+.faq-answer p + p {
   margin-top: var(--space-2);
+}
+
+.faq-answer ul {
+  margin: var(--space-2) 0;
+  padding-left: 1.2rem;
+  display: grid;
+  gap: 5px;
+}
+
+.faq-closing {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: clamp(48px, 8vw, 128px);
+  padding: clamp(56px, 7vw, 88px) 0 0;
+  border-top: 1px solid var(--color-border-medium);
+}
+
+.faq-closing h2 {
+  margin: 0 0 var(--space-2);
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: clamp(30px, 3vw, 42px);
+  line-height: 1.12;
+}
+
+.faq-closing p {
+  margin: 0;
+}
+
+.faq-closing p a {
+  color: var(--color-accent);
+  text-underline-offset: 0.18em;
+}
+
+.faq-closing .about-book-link {
+  margin-top: 0;
+}
+
+@media (max-width: 700px) {
+  .faq-answer {
+    padding-right: 32px;
+  }
+
+  .faq-closing {
+    grid-template-columns: 1fr;
+    gap: var(--space-5);
+  }
+}
+
+.faq-item + .faq-item {
+  margin-top: 0;
 }
 
 .how-section {
