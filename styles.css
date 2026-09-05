@@ -126,7 +126,7 @@ body {
   margin: 0 auto;
   padding-left: var(--space-4);
   padding-right: var(--space-4);
-  padding-top: max(0px, env(safe-area-inset-top));
+  padding-top: 0;
   padding-bottom: max(var(--space-5), env(safe-area-inset-bottom));
 }
 
