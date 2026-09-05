@@ -141,8 +141,10 @@ body {
   align-items: center;
   justify-content: space-between;
   gap: var(--space-3);
-  border-bottom: 1px solid var(--color-border-light);
-  background: transparent;
+  border-bottom: none;
+  background: var(--color-bg-ivory);
+  box-shadow: 0 0 0 100vmax var(--color-bg-ivory);
+  clip-path: inset(0 -100vmax);
 }
 
 .nav-links {
@@ -236,9 +238,7 @@ body {
   padding-top: var(--space-4);
   padding-bottom: var(--space-4);
   text-align: left;
-  background: var(--color-bg-ivory);
-  box-shadow: 0 0 0 100vmax var(--color-bg-ivory);
-  clip-path: inset(0 -100vmax);
+  background: transparent;
 }
 
 .eyebrow {
@@ -328,7 +328,7 @@ h3 {
 .hero-stage {
   position: relative;
   min-height: 640px;
-  border-top: 1px solid var(--color-border-medium);
+  border-top: none;
   border-bottom: 1px solid var(--color-border-medium);
   border-left: none;
   border-right: none;
@@ -855,7 +855,13 @@ button:disabled {
 }
 
 .faq-grid {
-  gap: clamp(56px, 7vw, 88px);
+  gap: clamp(32px, 4vw, 48px);
+  padding-top: clamp(28px, 3vw, 40px);
+  padding-bottom: clamp(40px, 5vw, 56px);
+}
+
+.faq-page {
+  padding-bottom: 0;
 }
 
 .faq-page-divider {
@@ -871,7 +877,7 @@ button:disabled {
 }
 
 .faq-group-title {
-  margin: 0 0 var(--space-4);
+  margin: 0 0 var(--space-3);
   max-width: 780px;
   font-size: clamp(38px, 4vw, 56px);
   line-height: 1.08;
@@ -895,7 +901,7 @@ button:disabled {
   align-items: center;
   justify-content: space-between;
   gap: var(--space-2);
-  padding: 18px 0;
+  padding: 14px 0;
   font-size: var(--text-body-lg);
   line-height: var(--text-body-line);
   font-family: "Inter", "Avenir Next", "Segoe UI", sans-serif;
@@ -921,8 +927,8 @@ button:disabled {
 
 .faq-answer {
   margin: 0;
-  padding: 0 48px 20px 0;
-  max-width: 940px;
+  padding: 0 56px 16px 0;
+  max-width: none;
   color: var(--color-text-secondary);
   font-size: var(--text-body);
   line-height: var(--text-body-line);
@@ -947,7 +953,7 @@ button:disabled {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: clamp(48px, 8vw, 128px);
-  padding: clamp(56px, 7vw, 88px) 0 0;
+  padding: clamp(32px, 4vw, 48px) 0 0;
   border-top: 1px solid var(--color-border-medium);
 }
 
@@ -1103,7 +1109,7 @@ button:disabled {
 }
 
 .page-shell-narrow .hero {
-  padding-bottom: var(--space-1);
+  padding: 0;
 }
 
 .page-shell-narrow .hero h1 {
@@ -1365,11 +1371,20 @@ button:disabled {
 }
 
 .contact-page .page-shell {
-  flex: 1;
+  flex: none;
+  padding-bottom: 0;
 }
 
 .contact-page .site-footer {
   margin-top: 0;
+}
+
+.contact-page .hero h1 {
+  margin-top: clamp(32px, 4vw, 48px);
+}
+
+.contact-page .hero-copy {
+  margin-bottom: clamp(36px, 4vw, 52px);
 }
 
 .about-page {
@@ -1377,7 +1392,7 @@ button:disabled {
 }
 
 .about-page .hero {
-  padding-bottom: 16px;
+  padding-bottom: 0;
 }
 
 .about-editorial {
@@ -1388,21 +1403,23 @@ button:disabled {
   width: 100vw;
   margin-left: calc(50% - 50vw);
   display: grid;
-  grid-template-columns: minmax(420px, 0.82fr) minmax(0, 1.18fr);
-  align-items: center;
-  gap: clamp(36px, 5vw, 80px);
-  padding-left: max(var(--space-4), calc((100vw - var(--container-max)) / 2 + var(--space-4)));
+  grid-template-columns: minmax(0, 1.08fr) minmax(360px, 0.92fr);
+  align-items: end;
+  gap: clamp(36px, 5vw, 72px);
+  padding: clamp(36px, 4vw, 52px) max(var(--space-4), calc((100vw - var(--container-max)) / 2 + var(--space-4))) 0;
   background: var(--color-bg-primary);
 }
 
 .about-intro-copy {
   width: 100%;
-  max-width: 560px;
-  padding: clamp(40px, 5vw, 72px) 0;
+  max-width: 650px;
+  padding: 0 0 clamp(40px, 4vw, 56px);
 }
 
 .about-intro h1 {
-  margin: 0 0 var(--space-4);
+  grid-column: 1 / -1;
+  margin: 0;
+  max-width: none;
   font-size: clamp(48px, 5vw, 72px);
   line-height: 1.02;
   text-align: left;
@@ -1422,7 +1439,11 @@ button:disabled {
 }
 
 .about-portrait {
+  position: relative;
+  z-index: 1;
+  grid-column: 2;
   margin: 0;
+  margin-bottom: -32px;
   overflow: hidden;
   background: var(--color-bg-muted);
 }
@@ -1430,16 +1451,24 @@ button:disabled {
 .about-portrait img {
   display: block;
   width: 100%;
-  height: clamp(500px, 58vw, 760px);
+  height: clamp(300px, 30vw, 410px);
   object-fit: cover;
+  filter: brightness(0.88) saturate(0.82);
 }
 
 .about-row {
   display: grid;
   grid-template-columns: minmax(220px, 0.72fr) minmax(0, 1.28fr);
   gap: clamp(48px, 8vw, 128px);
-  padding: clamp(48px, 5vw, 68px) 0;
+  padding: clamp(44px, 4.5vw, 60px) 0;
   border-top: none;
+}
+
+.about-travel-copy {
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  padding: clamp(72px, 7vw, 92px) max(var(--space-4), calc((100vw - var(--container-max)) / 2 + var(--space-4))) clamp(44px, 4.5vw, 60px);
+  background: var(--color-bg-ivory);
 }
 
 .about-heading h2 {
@@ -1484,7 +1513,7 @@ button:disabled {
 .about-travel-image img {
   display: block;
   width: 100%;
-  height: clamp(420px, 54vw, 720px);
+  height: clamp(380px, 46vw, 560px);
   object-fit: cover;
 }
 
@@ -1510,7 +1539,7 @@ button:disabled {
   margin: 0;
   font-family: "Playfair Display", Georgia, serif;
   color: var(--color-bg-ivory);
-  font-size: clamp(34px, 4.3vw, 60px);
+  font-size: clamp(32px, 3.8vw, 52px);
   font-style: italic;
   font-weight: 500;
   line-height: 1.14;
@@ -1521,7 +1550,7 @@ button:disabled {
 .about-row-final {
   width: 100vw;
   margin-left: calc(50% - 50vw);
-  padding: clamp(52px, 6vw, 76px) max(var(--space-4), calc((100vw - var(--container-max)) / 2 + var(--space-4)));
+  padding: clamp(44px, 5vw, 60px) max(var(--space-4), calc((100vw - var(--container-max)) / 2 + var(--space-4)));
   background: var(--color-bg-primary);
 }
 
@@ -1556,16 +1585,27 @@ button:disabled {
 
   .about-intro {
     gap: 0;
-    padding-left: 0;
+    padding: 32px 0 0;
+  }
+
+  .about-intro h1 {
+    padding: 0 var(--space-3);
   }
 
   .about-intro-copy {
     max-width: none;
-    padding: 40px var(--space-3);
+    padding: var(--space-4) var(--space-3) 32px;
+  }
+
+  .about-portrait {
+    grid-column: 1;
+    width: calc(100% - var(--space-3));
+    margin-left: auto;
+    margin-bottom: -24px;
   }
 
   .about-portrait img {
-    height: min(680px, 82vh);
+    height: clamp(280px, 68vw, 380px);
   }
 
   .about-row {
@@ -1578,6 +1618,10 @@ button:disabled {
     grid-template-columns: 1fr;
     padding-left: var(--space-3);
     padding-right: var(--space-3);
+  }
+
+  .about-travel-copy {
+    padding: 56px var(--space-3) 40px;
   }
 
   .about-row-reverse .about-heading,
@@ -1605,6 +1649,10 @@ button:disabled {
 
   .about-pullquote p {
     font-size: clamp(30px, 8vw, 46px);
+  }
+
+  .about-travel-image img {
+    height: 440px;
   }
 
   .about-row-final {
