@@ -1200,64 +1200,69 @@ button:disabled {
 }
 
 .partners-strip {
-  background: #ffffff;
-  border-top: 1px solid var(--color-border-light);
+  background: var(--color-bg-primary);
+  border-top: none;
   border-bottom: 1px solid var(--color-border-light);
 }
 
 .partners-inner {
   max-width: var(--container-max);
   margin: 0 auto;
-  padding: var(--space-4);
+  padding: var(--space-5) var(--space-4) var(--space-6);
 }
 
 .partners-eyebrow {
-  margin: 0 0 var(--space-3);
-  font-size: var(--text-small);
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: var(--color-text-secondary);
+  margin: 0 0 var(--space-5);
+  color: var(--color-text-primary);
+  font-size: 14px;
+  line-height: 1.5;
+  letter-spacing: 0.025em;
+  text-align: center;
 }
 
 .partners-grid {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: var(--space-2);
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  align-items: center;
+  gap: clamp(28px, 4vw, 64px);
 }
 
 .partner-mark {
-  border: 1px solid var(--color-border-light);
-  border-radius: 8px;
-  min-height: 104px;
-  display: grid;
-  place-items: center;
-  padding: 12px;
-  background: #ffffff;
+  min-width: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .partner-mark img {
   display: block;
   width: auto;
   max-width: 100%;
-  height: auto;
-  max-height: 58px;
+  height: 72px;
   object-fit: contain;
+  filter: grayscale(1) contrast(1.08);
+  mix-blend-mode: multiply;
+  opacity: 0.72;
 }
 
-.partner-mark img[src*="hyatt_prive_vector.webp"] {
-  max-height: 92px;
+.partner-virtuoso img {
+  width: 190px;
 }
 
-.partner-mark img[src*="belmond_Partner.webp"] {
-  max-height: 92px;
+.partner-four-seasons img {
+  width: 180px;
 }
 
-.partner-mark img[src*="Virtuoso+Member_Vector.webp"] {
-  max-height: 62px;
+.partner-hyatt img {
+  width: 145px;
 }
 
-.partner-mark img[src*="Four_Seasons_Preferred_Partner_Vector.webp"] {
-  max-height: 66px;
+.partner-bellini img {
+  width: 180px;
+}
+
+.partner-raffles img {
+  width: 155px;
 }
 
 .contact-page {
@@ -1406,6 +1411,15 @@ button:disabled {
   }
 
   .partners-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    row-gap: var(--space-5);
+  }
+
+  .partners-inner {
+    padding: var(--space-5) var(--space-3);
+  }
+
+  .partners-eyebrow {
+    margin-bottom: var(--space-4);
   }
 }
