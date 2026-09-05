@@ -1525,11 +1525,6 @@ button:disabled {
   background: var(--color-bg-ivory);
 }
 
-.about-travel-copy .about-row-copy {
-  grid-column: 1 / -1;
-  max-width: 900px;
-}
-
 .about-heading h2 {
   margin: 0;
   max-width: 460px;
