@@ -1399,20 +1399,24 @@ button:disabled {
   margin-left: calc(50% - 50vw);
   display: grid;
   grid-template-columns: minmax(0, 1.08fr) minmax(360px, 0.92fr);
-  align-items: end;
+  align-items: start;
   gap: clamp(36px, 5vw, 72px);
-  padding: clamp(36px, 4vw, 52px) max(var(--space-4), calc((100vw - var(--container-max)) / 2 + var(--space-4))) 0;
+  padding: clamp(32px, 3vw, 40px) max(var(--space-4), calc((100vw - var(--container-max)) / 2 + var(--space-4))) 0;
   background: var(--color-bg-primary);
 }
 
 .about-intro-copy {
+  grid-column: 1;
+  grid-row: 1;
   width: 100%;
   max-width: 650px;
-  padding: 0 0 clamp(40px, 4vw, 56px);
+  margin-top: clamp(92px, 8vw, 118px);
+  padding: 0 0 clamp(32px, 3vw, 40px);
 }
 
 .about-intro h1 {
-  grid-column: 1 / -1;
+  grid-column: 1;
+  grid-row: 1;
   margin: 0;
   max-width: none;
   font-size: clamp(48px, 5vw, 72px);
@@ -1437,6 +1441,7 @@ button:disabled {
   position: relative;
   z-index: 1;
   grid-column: 2;
+  grid-row: 1;
   margin: 0;
   margin-bottom: -32px;
   overflow: hidden;
@@ -1584,16 +1589,21 @@ button:disabled {
   }
 
   .about-intro h1 {
+    grid-row: auto;
     padding: 0 var(--space-3);
   }
 
   .about-intro-copy {
+    grid-column: 1;
+    grid-row: auto;
     max-width: none;
+    margin-top: 0;
     padding: var(--space-4) var(--space-3) 32px;
   }
 
   .about-portrait {
     grid-column: 1;
+    grid-row: auto;
     width: calc(100% - var(--space-3));
     margin-left: auto;
     margin-bottom: -24px;
