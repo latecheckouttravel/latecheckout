@@ -56,7 +56,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Playfair+Display:wght@500&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="/styles.css?v=20260905-7" />
+    <link rel="stylesheet" href="/styles.css?v=20260905-8" />
   </head>
   <body>
     <!-- Google Tag Manager (noscript) -->
@@ -85,7 +85,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       <section class="about-editorial" aria-label="About Sara and Late Checkout">
         <article class="about-intro">
           <div class="about-intro-copy">
-            <h1>Hi, I’m Sara.</h1>
+            <p class="about-section-number" aria-hidden="true">01</p>
+            <h1>Hi, I’m<br />Sara.</h1>
             <p>I’m a San Francisco-based travel advisor and the person behind Late Checkout.</p>
             <p>I spend a lot of time thinking about hotels, where to go next, and the little things that make a trip feel special.</p>
           </div>
@@ -95,20 +96,30 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         </article>
 
         <article class="about-row about-row-reverse">
-          <h2>How I like to travel</h2>
+          <div class="about-heading">
+            <p class="about-section-number" aria-hidden="true">02</p>
+            <h2>How I like<br />to travel</h2>
+          </div>
           <div class="about-row-copy">
             <p>I love a beautiful hotel and a great meal, but the trips I remember most are the ones that change the way I see something.</p>
             <p>I tend to prefer seeing a little less and staying a little longer. A tucked-away café over a checklist. A hotel with a real sense of place over one that could be anywhere. Luxury that shows up in the details rather than announcing itself.</p>
-            <p>I believe the best trips leave you carrying something new home with you, and maybe leaving behind something you didn’t need anymore.</p>
           </div>
         </article>
 
+        <blockquote class="about-pullquote">
+          <p>I believe the best trips leave you carrying something new home with you, and maybe leaving behind something you didn’t need anymore.</p>
+        </blockquote>
+
         <figure class="about-travel-image">
           <img src="/images/about-pool.jpg" alt="A curved hotel pool with a striped chair and palm shadows" loading="lazy" />
+          <figcaption>A little less. A little longer.</figcaption>
         </figure>
 
         <article class="about-row about-row-final">
-          <h2>What I do</h2>
+          <div class="about-heading">
+            <p class="about-section-number" aria-hidden="true">03</p>
+            <h2>What<br />I do</h2>
+          </div>
           <div class="about-row-copy">
             <p>I help travelers find and book great hotels around the world.</p>
             <p>Sometimes you already know exactly where you want to stay. Sometimes you’re deciding between three hotels and want someone who actually knows the difference. Either works.</p>
