@@ -55,12 +55,17 @@
   box-sizing: border-box;
 }
 
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
 html {
   background: var(--color-bg-ivory);
 }
 
 body {
-  margin: 0;
   background: var(--color-bg-primary);
   color: var(--color-text-primary);
   font-family: "Inter", "Avenir Next", "Segoe UI", sans-serif;
