@@ -135,8 +135,8 @@ body {
 }
 
 .top-nav {
-  min-height: 72px;
-  padding: var(--space-1) 0;
+  min-height: 96px;
+  padding: 24px 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -409,11 +409,6 @@ h3 {
 
 .home-page .hero {
   padding: 0;
-}
-
-.home-page .top-nav {
-  min-height: 96px;
-  padding: 24px 0;
 }
 
 .home-page .hero-stage {
