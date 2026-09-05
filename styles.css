@@ -917,6 +917,57 @@ button:disabled {
   padding-bottom: var(--space-6);
 }
 
+.why-section {
+  padding: var(--space-7) 0;
+  border-bottom: 1px solid var(--color-border-medium);
+}
+
+.why-content {
+  max-width: 820px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.why-content h2 {
+  margin-bottom: var(--space-4);
+  font-size: clamp(36px, 4vw, 52px);
+}
+
+.why-content p {
+  margin: 0 auto var(--space-3);
+  color: var(--color-text-secondary);
+  font-size: clamp(18px, 1.7vw, 22px);
+  line-height: 1.65;
+}
+
+.why-content .why-lede,
+.why-content .why-signoff {
+  color: var(--color-text-primary);
+}
+
+.why-content .why-lede {
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: clamp(24px, 2.5vw, 34px);
+  line-height: 1.35;
+}
+
+.why-signoff {
+  padding-top: var(--space-2);
+}
+
+.editorial-link {
+  display: inline-block;
+  margin-top: var(--space-1);
+  color: var(--color-text-primary);
+  font-weight: 500;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.28em;
+}
+
+.editorial-link:hover {
+  color: var(--color-accent-hover);
+}
+
 .how-section h2 {
   margin-bottom: var(--space-3);
   font-family: "Playfair Display", Georgia, serif;
