@@ -1437,6 +1437,124 @@ button:disabled {
   filter: saturate(0.8) brightness(0.94);
 }
 
+.destinations-page {
+  padding-bottom: 0;
+}
+
+.destinations-page .hero {
+  padding: 0;
+}
+
+.destinations-intro,
+.featured-destination {
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  padding-right: max(var(--space-4), calc((100vw - var(--container-max)) / 2 + var(--space-4)));
+  padding-left: max(var(--space-4), calc((100vw - var(--container-max)) / 2 + var(--space-4)));
+}
+
+.destinations-intro {
+  padding-top: clamp(48px, 5vw, 72px);
+  padding-bottom: clamp(52px, 5.5vw, 80px);
+  background: var(--color-bg-primary);
+}
+
+.destinations-intro h1 {
+  max-width: 980px;
+  margin: 0;
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: clamp(54px, 6vw, 84px);
+  font-weight: 500;
+  line-height: 1.02;
+  letter-spacing: -0.035em;
+}
+
+.destinations-lede {
+  max-width: 850px;
+  margin: clamp(28px, 3vw, 40px) 0 0;
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: clamp(27px, 3vw, 40px);
+  line-height: 1.2;
+}
+
+.destinations-support {
+  max-width: 760px;
+  margin: var(--space-3) 0 0;
+  color: var(--color-text-secondary);
+  font-size: clamp(17px, 1.4vw, 20px);
+  line-height: 1.65;
+}
+
+.featured-destination {
+  padding-top: clamp(56px, 6vw, 88px);
+  padding-bottom: clamp(64px, 7vw, 104px);
+  background: var(--color-bg-ivory);
+}
+
+.featured-destination-image {
+  display: block;
+  overflow: hidden;
+}
+
+.featured-destination-image img {
+  display: block;
+  width: 100%;
+  height: clamp(420px, 48vw, 650px);
+  object-fit: cover;
+  filter: saturate(0.84) brightness(0.92);
+  transition: transform 0.6s ease;
+}
+
+.featured-destination-image:hover img {
+  transform: scale(1.012);
+}
+
+.featured-destination-copy {
+  display: grid;
+  grid-template-columns: minmax(240px, 0.8fr) minmax(0, 1.2fr);
+  gap: clamp(48px, 8vw, 128px);
+  align-items: start;
+  padding-top: clamp(32px, 4vw, 48px);
+}
+
+.featured-destination-copy h2 {
+  margin: 0;
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: clamp(48px, 5vw, 72px);
+  font-weight: 500;
+  line-height: 1.02;
+  letter-spacing: -0.03em;
+}
+
+.featured-destination-copy p {
+  max-width: 650px;
+  margin: 0;
+  font-size: clamp(18px, 1.45vw, 21px);
+  line-height: 1.65;
+}
+
+.destination-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: var(--space-3);
+  color: var(--color-accent);
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.destination-link:hover {
+  color: var(--color-accent-hover);
+}
+
+.destination-link span {
+  transition: transform 0.2s ease;
+}
+
+.destination-link:hover span {
+  transform: translateX(4px);
+}
+
 .about-page {
   padding-bottom: 0;
 }
@@ -1634,6 +1752,21 @@ button:disabled {
 }
 
 @media (max-width: 900px) {
+  .destinations-intro,
+  .featured-destination {
+    padding-right: var(--space-3);
+    padding-left: var(--space-3);
+  }
+
+  .featured-destination-copy {
+    grid-template-columns: 1fr;
+    gap: var(--space-3);
+  }
+
+  .featured-destination-image img {
+    height: clamp(300px, 68vw, 480px);
+  }
+
   .contact-editorial {
     grid-template-columns: 1fr;
     gap: var(--space-4);
