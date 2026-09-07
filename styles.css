@@ -1666,7 +1666,7 @@ button:disabled {
 
 .island-index-intro {
   max-width: 760px;
-  margin: var(--space-4) 0 0 calc(34% + var(--space-4));
+  margin: var(--space-4) 0 0 calc(25.4% + 24px);
   font-size: clamp(18px, 1.45vw, 21px);
   line-height: 1.65;
 }
