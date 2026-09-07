@@ -1481,7 +1481,7 @@ button:disabled {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: clamp(28px, 3.5vw, 48px);
-  padding-top: clamp(56px, 6vw, 88px);
+  padding-top: clamp(28px, 3vw, 40px);
   padding-bottom: clamp(64px, 7vw, 104px);
   background: var(--color-bg-ivory);
 }
