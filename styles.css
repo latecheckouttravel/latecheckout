@@ -1556,6 +1556,407 @@ button:disabled {
   transform: translateX(4px);
 }
 
+.hawaii-page {
+  padding-bottom: 0;
+}
+
+.hawaii-page .hero {
+  padding: 0;
+}
+
+.hawaii-intro,
+.hawaii-big-island,
+.hawaii-choose,
+.hawaii-advisor,
+.hawaii-faq,
+.hawaii-byline {
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  padding-right: max(var(--space-4), calc((100vw - var(--container-max)) / 2 + var(--space-4)));
+  padding-left: max(var(--space-4), calc((100vw - var(--container-max)) / 2 + var(--space-4)));
+}
+
+.hawaii-intro {
+  padding-top: clamp(28px, 3vw, 40px);
+  padding-bottom: clamp(44px, 5vw, 72px);
+  background: var(--color-bg-primary);
+}
+
+.breadcrumbs {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: clamp(36px, 5vw, 64px);
+  color: var(--color-text-secondary);
+  font-size: 13px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.breadcrumbs a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.breadcrumbs a:hover {
+  color: var(--color-accent-hover);
+}
+
+.hawaii-intro-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(340px, 0.85fr);
+  align-items: end;
+  gap: clamp(48px, 8vw, 128px);
+}
+
+.hawaii-intro h1,
+.hawaii-section-heading h2,
+.hawaii-advisor h2 {
+  margin: 0;
+  font-family: "Playfair Display", Georgia, serif;
+  font-weight: 500;
+  letter-spacing: -0.035em;
+}
+
+.hawaii-intro h1 {
+  font-size: clamp(48px, 5vw, 72px);
+  line-height: 1.02;
+}
+
+.hawaii-deck {
+  max-width: 760px;
+  margin: var(--space-3) 0 0;
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: clamp(25px, 2.4vw, 34px);
+  line-height: 1.3;
+}
+
+.hawaii-intro-copy p {
+  margin: 0;
+  font-size: clamp(17px, 1.35vw, 20px);
+  line-height: 1.65;
+}
+
+.hawaii-hero-image {
+  width: 100vw;
+  margin: 0 0 0 calc(50% - 50vw);
+  overflow: hidden;
+  background: var(--color-bg-primary);
+}
+
+.hawaii-hero-image img {
+  display: block;
+  width: 100%;
+  height: clamp(360px, 45vw, 650px);
+  object-fit: cover;
+  filter: saturate(0.82) brightness(0.88);
+}
+
+.hawaii-big-island,
+.hawaii-faq {
+  padding-top: clamp(64px, 8vw, 112px);
+  padding-bottom: clamp(64px, 8vw, 112px);
+  background: var(--color-bg-ivory);
+}
+
+.hawaii-section-heading {
+  display: grid;
+  grid-template-columns: minmax(140px, 0.34fr) minmax(0, 1fr);
+  align-items: baseline;
+  gap: var(--space-4);
+}
+
+.section-kicker {
+  margin: 0;
+  color: var(--color-accent);
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.hawaii-section-heading h2,
+.hawaii-advisor h2 {
+  font-size: clamp(40px, 4.4vw, 62px);
+  line-height: 1.07;
+}
+
+.hawaii-section-intro {
+  max-width: 780px;
+  margin: var(--space-4) 0 0 calc(34% + var(--space-4));
+}
+
+.hawaii-section-intro p {
+  margin: 0;
+  font-size: clamp(18px, 1.45vw, 21px);
+  line-height: 1.65;
+}
+
+.hotel-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: clamp(28px, 4vw, 56px);
+  margin-top: clamp(52px, 6vw, 80px);
+}
+
+.hotel-card {
+  padding-top: var(--space-3);
+  border-top: 1px solid var(--color-border-medium);
+}
+
+.hotel-number {
+  margin: 0 0 var(--space-3);
+  color: var(--color-accent);
+  font-size: 12px;
+  letter-spacing: 0.12em;
+}
+
+.hotel-card h3 {
+  min-height: 2.35em;
+  margin: 0;
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: clamp(27px, 2.4vw, 35px);
+  font-weight: 500;
+  line-height: 1.16;
+  letter-spacing: -0.025em;
+}
+
+.hotel-card p {
+  margin: var(--space-3) 0 0;
+  color: var(--color-text-secondary);
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+.hotel-card .hotel-best {
+  color: var(--color-text-primary);
+  font-weight: 500;
+}
+
+.hotel-best span {
+  display: block;
+  margin-bottom: 5px;
+  color: var(--color-text-secondary);
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.hawaii-choose {
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(420px, 1.1fr);
+  gap: clamp(48px, 8vw, 128px);
+  padding-top: clamp(64px, 8vw, 112px);
+  padding-bottom: clamp(64px, 8vw, 112px);
+  background: var(--color-bg-primary);
+}
+
+.hawaii-choose .hawaii-section-heading {
+  display: block;
+}
+
+.hawaii-choose .section-kicker,
+.hawaii-advisor .section-kicker {
+  margin-bottom: var(--space-3);
+}
+
+.choice-list p {
+  margin: 0;
+  padding: var(--space-3) 0;
+  border-top: 1px solid rgba(28, 27, 25, 0.18);
+  font-size: clamp(17px, 1.35vw, 20px);
+  line-height: 1.65;
+}
+
+.choice-list p:last-child {
+  border-bottom: 1px solid rgba(28, 27, 25, 0.18);
+}
+
+.choice-list strong {
+  display: block;
+  margin-bottom: 4px;
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 1.25em;
+  font-weight: 500;
+}
+
+.hawaii-advisor {
+  padding-top: clamp(72px, 9vw, 128px);
+  padding-bottom: clamp(72px, 9vw, 128px);
+  background: var(--color-text-primary);
+  color: var(--color-bg-ivory);
+}
+
+.hawaii-advisor-copy {
+  max-width: 900px;
+}
+
+.hawaii-advisor h2 {
+  max-width: 800px;
+  margin-bottom: var(--space-4);
+}
+
+.hawaii-advisor-copy > p:not(.section-kicker) {
+  max-width: 780px;
+  margin: 0;
+  color: var(--color-bg-ivory);
+  font-size: clamp(18px, 1.45vw, 21px);
+  line-height: 1.68;
+}
+
+.hawaii-advisor-copy > p + p {
+  margin-top: var(--space-3);
+}
+
+.hawaii-advisor .advisor-note {
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: clamp(22px, 2vw, 28px);
+}
+
+.hawaii-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: var(--space-4);
+  padding: 14px 19px;
+  background: var(--color-cta-primary);
+  color: #fff;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.hawaii-cta:hover {
+  background: var(--color-accent-hover);
+}
+
+.hawaii-faq-list {
+  max-width: 920px;
+  margin: clamp(48px, 6vw, 72px) 0 0 auto;
+  border-top: 1px solid var(--color-border-medium);
+}
+
+.hawaii-faq-list details {
+  border-bottom: 1px solid var(--color-border-medium);
+}
+
+.hawaii-faq-list summary {
+  position: relative;
+  padding: var(--space-3) 48px var(--space-3) 0;
+  cursor: pointer;
+  list-style: none;
+  font-size: clamp(17px, 1.35vw, 20px);
+  font-weight: 500;
+}
+
+.hawaii-faq-list summary::-webkit-details-marker {
+  display: none;
+}
+
+.hawaii-faq-list summary::after {
+  content: "+";
+  position: absolute;
+  top: 50%;
+  right: 4px;
+  transform: translateY(-50%);
+  color: var(--color-accent);
+  font-size: 25px;
+  font-weight: 400;
+}
+
+.hawaii-faq-list details[open] summary::after {
+  content: "−";
+}
+
+.hawaii-faq-list details p {
+  max-width: 780px;
+  margin: 0;
+  padding: 0 48px var(--space-3) 0;
+  color: var(--color-text-secondary);
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+.hawaii-byline {
+  padding-top: var(--space-4);
+  padding-bottom: var(--space-4);
+  background: var(--color-bg-ivory);
+  border-top: 1px solid var(--color-border-medium);
+}
+
+.hawaii-byline p {
+  margin: 0;
+  color: var(--color-text-secondary);
+  font-size: 14px;
+}
+
+.hawaii-byline a {
+  color: var(--color-accent-hover);
+  text-underline-offset: 0.18em;
+}
+
+@media (max-width: 900px) {
+  .hawaii-intro,
+  .hawaii-big-island,
+  .hawaii-choose,
+  .hawaii-advisor,
+  .hawaii-faq,
+  .hawaii-byline {
+    padding-right: var(--space-3);
+    padding-left: var(--space-3);
+  }
+
+  .hawaii-intro-grid,
+  .hawaii-choose {
+    grid-template-columns: 1fr;
+    gap: var(--space-4);
+  }
+
+  .hawaii-section-heading {
+    grid-template-columns: 1fr;
+    gap: var(--space-2);
+  }
+
+  .hawaii-section-intro {
+    margin-left: 0;
+  }
+
+  .hotel-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hotel-card h3 {
+    min-height: 0;
+  }
+}
+
+@media (max-width: 700px) {
+  .hawaii-intro {
+    padding-top: var(--space-3);
+    padding-bottom: var(--space-5);
+  }
+
+  .breadcrumbs {
+    margin-bottom: var(--space-4);
+  }
+
+  .hawaii-deck {
+    font-size: 25px;
+  }
+
+  .hawaii-hero-image img {
+    height: 360px;
+  }
+
+  .hawaii-big-island,
+  .hawaii-choose,
+  .hawaii-advisor,
+  .hawaii-faq {
+    padding-top: 56px;
+    padding-bottom: 56px;
+  }
+}
+
 .about-page {
   padding-bottom: 0;
 }
