@@ -1568,8 +1568,7 @@ button:disabled {
 .hawaii-big-island,
 .hawaii-choose,
 .hawaii-advisor,
-.hawaii-faq,
-.hawaii-byline {
+.hawaii-faq {
   width: 100vw;
   margin-left: calc(50% - 50vw);
   padding-right: max(var(--space-4), calc((100vw - var(--container-max)) / 2 + var(--space-4)));
@@ -1802,17 +1801,6 @@ button:disabled {
   margin-top: var(--space-3);
 }
 
-.island-source {
-  margin: var(--space-4) 0 0;
-  color: var(--color-text-secondary);
-  font-size: 13px;
-}
-
-.island-source a {
-  color: var(--color-accent-hover);
-  text-underline-offset: 0.18em;
-}
-
 .hawaii-big-island,
 .hawaii-faq {
   padding-top: clamp(64px, 8vw, 112px);
@@ -2038,31 +2026,12 @@ button:disabled {
   line-height: 1.7;
 }
 
-.hawaii-byline {
-  padding-top: var(--space-4);
-  padding-bottom: var(--space-4);
-  background: var(--color-bg-ivory);
-  border-top: 1px solid var(--color-border-medium);
-}
-
-.hawaii-byline p {
-  margin: 0;
-  color: var(--color-text-secondary);
-  font-size: 14px;
-}
-
-.hawaii-byline a {
-  color: var(--color-accent-hover);
-  text-underline-offset: 0.18em;
-}
-
 @media (max-width: 900px) {
   .hawaii-intro,
   .hawaii-big-island,
   .hawaii-choose,
   .hawaii-advisor,
-  .hawaii-faq,
-  .hawaii-byline {
+  .hawaii-faq {
     padding-right: var(--space-3);
     padding-left: var(--space-3);
   }
