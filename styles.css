@@ -1938,16 +1938,17 @@ button:disabled {
 }
 
 .hawaii-advisor-copy {
-  max-width: 900px;
+  max-width: none;
 }
 
 .hawaii-advisor h2 {
-  max-width: 800px;
+  max-width: none;
   margin-bottom: var(--space-4);
+  color: var(--color-bg-ivory);
 }
 
 .hawaii-advisor-copy > p:not(.section-kicker) {
-  max-width: 780px;
+  max-width: none;
   margin: 0;
   color: var(--color-bg-ivory);
   font-size: clamp(18px, 1.45vw, 21px);
