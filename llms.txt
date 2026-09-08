@@ -7,7 +7,8 @@
 - [Home](https://latecheckouttravel.com/): Overview of the hotel reservation review and luxury travel advisory service.
 - [About](https://latecheckouttravel.com/about.html): Company, compensation, accreditation, preferred partnerships, LinkedIn, and Travel Journal details.
 - [Destinations](https://latecheckouttravel.com/destinations.html): Luxury destination guides and hotel recommendations.
-- [Hawaii luxury travel](https://latecheckouttravel.com/destinations/hawaii.html): A hotel-first guide to choosing among Kauai, Maui, Oahu, Lanai, and Hawaii Island, with a detailed comparison of Four Seasons Resort Hualalai, Kona Village, and Mauna Lani.
+- [Hawaii luxury travel](https://latecheckouttravel.com/destinations/hawaii.html): A hotel-first guide to choosing among Kauai, Maui, Oahu, Lanai, and Hawaii Island.
+- [Big Island luxury hotels](https://latecheckouttravel.com/destinations/hawaii/big-island.html): A focused Hawaii Island guide comparing Four Seasons Resort Hualalai, Kona Village, and Mauna Lani, with luxury hotel booking advice.
 - [Frequently asked questions](https://latecheckouttravel.com/faqs.html): Eligibility, rebooking, rates, benefits, and process.
 - [Upgrade an existing stay](https://latecheckouttravel.com/upgrade/): Submit a refundable luxury hotel reservation for review.
 - [Start a new stay](https://latecheckouttravel.com/start/): Request personalized luxury hotel booking options.
