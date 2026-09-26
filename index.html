@@ -158,14 +158,14 @@
     <div class="dialog-inner">
       <p class="label">The Founding 400</p><h2 id="access-title">Request access to<br />Late Checkout.</h2>
       <p class="dialog-intro">We’re currently reviewing requests for a limited number of relationships within our founding roster.</p>
-      <!-- This endpoint must be implemented server-side by the production host. Never place email credentials or API keys here. -->
-      <form id="access-form" action="/api/request-access" method="post">
+      <form id="access-form" action="https://script.google.com/macros/s/AKfycbz9q_LZ3VtMboPw2aeLXlnCoz0puKk5Nf2hnk5RaFL7A_a1Sh2BKVWIEpht-KwzYMqMAw/exec" method="post">
+        <input type="hidden" name="formType" value="access" />
         <div class="form-row"><label>First name<input name="firstName" autocomplete="given-name" required /></label><label>Last name<input name="lastName" autocomplete="family-name" required /></label></div>
         <label>Email address<input type="email" name="email" autocomplete="email" required /></label>
         <label>Current employer<input name="employer" autocomplete="organization" required /></label>
         <label>Typical nightly hotel budget<select name="hotelSpend" required><option value="">Select a range</option><option>Under $500</option><option>$500–$999</option><option>$1,000–$1,499</option><option>$1,500–$2,499</option><option>$2,500+</option></select></label>
-        <label class="honeypot" aria-hidden="true">Company website<input name="companyWebsite" tabindex="-1" autocomplete="off" /></label>
-        <input type="hidden" name="source" id="referral-source" /><input type="hidden" name="page" id="submission-page" />
+        <label class="honeypot" aria-hidden="true">Company website<input name="website" tabindex="-1" autocomplete="off" /></label>
+        <input type="hidden" name="source" id="referral-source" /><input type="hidden" name="page" id="submission-page" /><input type="hidden" name="submitted" id="submission-time" />
         <button class="submit-button" type="submit">Request access</button><p class="form-status" id="access-status" role="status" aria-live="polite"></p>
       </form>
       <div class="success-state" id="success-state" tabindex="-1"><p class="label">Request received</p><h2>Thank you for your interest in Late Checkout.</h2><p>We personally review every request and will be in touch if we’re able to welcome you into the founding roster.</p></div>

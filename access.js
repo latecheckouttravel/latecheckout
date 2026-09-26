@@ -17,11 +17,19 @@
     event.preventDefault();status.textContent='';status.className='form-status';
     if(!form.reportValidity())return;
     const data=new FormData(form);
-    if(data.get('companyWebsite'))return;
+    if(data.get('website'))return;
+    document.getElementById('submission-time').value=new Date().toISOString();
+    const endpoint=form.action;
+    const isAppsScript=/script\.google\.com\/macros\/s\//i.test(endpoint);
     const button=form.querySelector('button[type="submit"]');button.disabled=true;button.textContent='Sending…';
     try{
-      const response=await fetch(form.action,{method:'POST',body:data,headers:{Accept:'application/json'}});
-      if(!response.ok)throw new Error('We could not send your request. Please try again or email hello@latecheckouttravel.com.');
+      if(isAppsScript){
+        const payload=new URLSearchParams(new FormData(form)).toString();
+        await fetch(`${endpoint}?${payload}`,{method:'GET',mode:'no-cors'});
+      }else{
+        const response=await fetch(endpoint,{method:'POST',body:new FormData(form),headers:{Accept:'application/json'}});
+        if(!response.ok)throw new Error('We could not send your request. Please try again or email hello@latecheckouttravel.com.');
+      }
       form.hidden=true;success.classList.add('is-visible');success.focus();
     }catch(error){status.textContent=error.message;status.classList.add('error')}
     finally{button.disabled=false;button.textContent='Request access'}
