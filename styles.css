@@ -2637,7 +2637,7 @@ button:disabled {
     width: auto;
     flex-direction: row;
     align-items: center;
-    gap: 18px;
+    gap: 28px;
     padding: 0;
   }
 
