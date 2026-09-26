@@ -12,7 +12,8 @@ a{color:inherit;text-underline-offset:.22em}
 .journal-nav a:hover,.journal-nav a[aria-current="page"]{border-color:currentColor}
 .journal-index{padding:clamp(64px,7vw,105px) 4vw clamp(90px,9vw,140px)}
 .journal-kicker,.article-kicker,.eyebrow{text-transform:uppercase;letter-spacing:.16em;font-size:10px;font-weight:500}
-.journal-index h1{max-width:950px;margin:18px 0 60px;font:500 clamp(64px,9vw,132px)/.94 var(--serif);letter-spacing:-.05em}
+.journal-index h1{max-width:950px;margin:18px 0 26px;font:500 clamp(64px,9vw,132px)/.94 var(--serif);letter-spacing:-.05em}
+.journal-intro{max-width:650px;margin:0 0 60px;color:var(--muted);font:500 clamp(18px,1.6vw,23px)/1.55 var(--serif)}
 .issue-grid{display:grid;grid-template-columns:1.25fr .75fr;gap:4vw;align-items:start}
 .issue-card{text-decoration:none}
 .issue-card img{width:100%;aspect-ratio:4/3;object-fit:cover;filter:saturate(.8)}
@@ -21,6 +22,7 @@ a{color:inherit;text-underline-offset:.22em}
 .issue-card h2{margin:18px 0 12px;font:500 clamp(35px,4.5vw,70px)/1 var(--serif);letter-spacing:-.035em}
 .issue-card.secondary h2{font-size:clamp(32px,3.4vw,54px)}
 .issue-card p{max-width:620px;color:var(--muted)}
+.issue-read{display:inline-block;margin-top:10px;padding-bottom:4px;border-bottom:1px solid;text-transform:uppercase;letter-spacing:.13em;font-size:9px}
 .article-hero{padding:clamp(60px,7vw,105px) 4vw 4vw}
 .article-hero h1{max-width:1080px;margin:18px 0 28px;font:500 clamp(48px,5.6vw,82px)/1 var(--serif);letter-spacing:-.04em}
 .article-deck{max-width:720px;font:500 clamp(20px,2vw,29px)/1.5 var(--serif)}
@@ -72,6 +74,7 @@ a{color:inherit;text-underline-offset:.22em}
 .journal-cta{padding:9vw 4vw;background:var(--ink);color:var(--ivory);text-align:center}
 .journal-cta h2{max-width:900px;margin:0 auto 35px;font:500 clamp(48px,7vw,105px)/.95 var(--serif);letter-spacing:-.045em}
 .journal-cta a{display:inline-block;text-transform:uppercase;letter-spacing:.13em;font-size:10px;text-decoration:none;border-bottom:1px solid;padding-bottom:5px}
+.journal-cta-links{display:flex;justify-content:center;gap:34px;flex-wrap:wrap}
 .journal-footer{padding:38px 4vw;background:var(--ink);color:var(--ivory);border-top:1px solid #3a3835;display:grid;grid-template-columns:170px minmax(260px,1fr) auto;align-items:start;gap:40px;font-size:10px;text-transform:uppercase;letter-spacing:.1em}
 .journal-footer p{margin:0}
 .journal-footer .footer-affiliation{max-width:620px;color:#aaa59d;text-transform:none;letter-spacing:0;line-height:1.65}
@@ -82,7 +85,8 @@ a{color:inherit;text-underline-offset:.22em}
 .journal-nav{gap:28px}
 .journal-nav a{font-size:9px}
 .journal-index{padding:58px 20px 80px}
-.journal-index h1{font-size:18vw;line-height:.98;margin-bottom:48px}
+.journal-index h1{font-size:18vw;line-height:.98;margin-bottom:24px}
+.journal-intro{margin-bottom:48px}
 .issue-grid{display:block}
 .issue-card.secondary{margin-top:64px}
 .article-hero{padding:58px 20px 32px}
