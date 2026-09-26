@@ -20,6 +20,6 @@
       if(!result.ok)throw new Error(result.error||'The request could not be delivered.');
       document.getElementById('form-state').hidden=true;success.classList.add('is-visible');success.focus();
     }catch(error){status.textContent='We could not send your request. Please try again or email sara@latecheckouttravel.com.';status.classList.add('error')}
-    finally{button.disabled=false;button.textContent='Request access'}
+    finally{button.disabled=false;button.textContent='Request client access'}
   });
 })();
