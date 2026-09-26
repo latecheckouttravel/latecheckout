@@ -69,9 +69,7 @@
     .mark span:first-child,
     .plane { font-family: Arial, Helvetica, sans-serif; font-variant-emoji: text; }
     @media (min-width: 761px) {
-      .founding .section-grid,
       .difference .section-grid { grid-template-columns: 26% 1fr; }
-      .founding h1 { font-size: clamp(56px, 5.5vw, 92px); }
       .difference h2 { font-size: clamp(56px, 6vw, 96px); }
       .service h2 { font-size: clamp(56px, 5.3vw, 90px); }
     }
@@ -109,19 +107,6 @@
         </div>
       </div>
       <figure class="hero-image reveal"><img src="/images/hero-main.jpg" alt="A quiet coastal terrace at sunset" width="1672" height="941" fetchpriority="high" /></figure>
-    </section>
-
-    <section class="founding section-dark content-section" id="founding-400">
-      <div class="section-grid reveal">
-        <p class="label">The Founding 400</p>
-        <div>
-          <h1><span class="editorial-line">A private client roster,</span><span class="editorial-line">intentionally kept small.</span></h1>
-          <p class="body-copy">We began with an initial pilot of 100 households. We’re now expanding the founding roster to 400 across San Francisco and Silicon Valley.</p>
-          <p class="body-copy">We keep the client list intentionally small so we can know our clients, understand how they travel, and give each stay the attention it deserves.</p>
-          <button class="underline-link js-open-access" type="button">Request access</button>
-        </div>
-      </div>
-      <p class="roster-number" aria-label="Founding roster expanding from 100 to 400 households"><span>100</span><i>/</i><span>400</span></p>
     </section>
 
     <section class="difference section-light content-section" id="difference">
@@ -176,9 +161,8 @@
     </section>
 
     <section class="final-cta section-dark" id="request-access">
-      <span class="plane" aria-hidden="true">&#x2708;&#xFE0E;</span><p class="label">The Founding 400</p>
+      <span class="plane" aria-hidden="true">&#x2708;&#xFE0E;</span><p class="label">Late Checkout</p>
       <h2><span class="editorial-line">Your next hotel</span><span class="editorial-line">should know you're coming.</span></h2>
-      <p>We’re currently expanding our founding roster to 400 households across San Francisco and Silicon Valley.</p>
       <p>Request access and we’ll be in touch personally.</p>
       <button class="underline-link js-open-access" type="button">Request access</button>
     </section>
@@ -189,8 +173,8 @@
   <dialog class="access-dialog" id="access-dialog" aria-labelledby="access-title">
     <button class="dialog-close" type="button" aria-label="Close request form">Close</button>
     <div class="dialog-inner">
-      <p class="label">The Founding 400</p><h2 id="access-title">Request access to<br />Late Checkout.</h2>
-      <p class="dialog-intro">We’re currently reviewing requests for a limited number of relationships within our founding roster.</p>
+      <p class="label">Late Checkout</p><h2 id="access-title">Request access to<br />Late Checkout.</h2>
+      <p class="dialog-intro">Tell us a little about how you travel. We personally review every request.</p>
       <form id="access-form" action="https://script.google.com/macros/s/AKfycbyfFrxrfak91Lct-aHEc4lMVWiT-p340R4gguMU42_hWf39cgVgK7iYkuJe6EuSIvD7aQ/exec" method="post">
         <input type="hidden" name="formType" value="access" />
         <div class="form-row"><label>First name<input name="firstName" autocomplete="given-name" required /></label><label>Last name<input name="lastName" autocomplete="family-name" required /></label></div>
@@ -201,7 +185,7 @@
         <input type="hidden" name="source" id="referral-source" /><input type="hidden" name="page" id="submission-page" /><input type="hidden" name="submitted" id="submission-time" />
         <button class="submit-button" type="submit">Request access</button><p class="form-status" id="access-status" role="status" aria-live="polite"></p>
       </form>
-      <div class="success-state" id="success-state" tabindex="-1"><p class="label">Request received</p><h2>Thank you for your interest in Late Checkout.</h2><p>We personally review every request and will be in touch if we’re able to welcome you into the founding roster.</p></div>
+      <div class="success-state" id="success-state" tabindex="-1"><p class="label">Request received</p><h2>Thank you for your interest in Late Checkout.</h2><p>We personally review every request and will be in touch if we’re able to work together.</p></div>
     </div>
   </dialog>
   <script src="/access.js?v=20260925"></script>
