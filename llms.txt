@@ -5,6 +5,7 @@
 ## Primary pages
 
 - [Home](https://latecheckouttravel.com/): Overview of Late Checkout's private luxury hotel advisory service.
+- [Travel Journal](https://latecheckouttravel.com/journal/): Editorial hotel recommendations, destination ideas, and considered travel advice.
 - [About](https://latecheckouttravel.com/about.html): Company, compensation, accreditation, preferred partnerships, LinkedIn, and Travel Journal details.
 - [Destinations](https://latecheckouttravel.com/destinations.html): Luxury destination guides and hotel recommendations.
 - [Hawaii luxury travel](https://latecheckouttravel.com/destinations/hawaii.html): A hotel-first guide to choosing among Kauai, Maui, Oahu, Lanai, and Hawaii Island.
