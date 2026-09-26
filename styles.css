@@ -2624,8 +2624,13 @@ button:disabled {
   }
 
   .brand-logo::before {
-    content: "✈︎";
-    font: 16px Arial, Helvetica, sans-serif;
+    content: "";
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background: currentColor;
+    -webkit-mask: url('/plane-mark.svg') center / contain no-repeat;
+    mask: url('/plane-mark.svg') center / contain no-repeat;
   }
 
   .nav-toggle {
