@@ -18,13 +18,13 @@ function handleAccessRequest_(p) {
   var firstName = clean_(p.firstName, 80);
   var lastName = clean_(p.lastName, 80);
   var email = clean_(p.email, 254).toLowerCase();
-  var employer = clean_(p.employer, 160);
   var budget = clean_(p.hotelSpend, 40);
+  var helpWith = clean_(p.helpWith, 3000);
   var source = clean_(p.source, 200) || 'Direct';
   var page = clean_(p.page, 500);
   var submitted = clean_(p.submitted, 80) || new Date().toISOString();
 
-  if (!firstName || !lastName || !employer ||
+  if (!firstName || !lastName ||
       !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email) || ALLOWED_BUDGETS.indexOf(budget) === -1) {
     return json_({ ok: false, error: 'Invalid submission.' });
   }
@@ -40,8 +40,8 @@ function handleAccessRequest_(p) {
     'NEW LATE CHECKOUT ACCESS REQUEST', '',
     'Name: ' + name,
     'Email: ' + email,
-    'Employer: ' + employer,
     'Typical nightly hotel budget: ' + budget,
+    'What they would like help with: ' + (helpWith || 'Not provided'),
     'Submitted: ' + submitted,
     'Source: ' + source,
     'Page: ' + page

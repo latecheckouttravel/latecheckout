@@ -11,3 +11,5 @@ This Google Apps Script validates access requests and Client Desk hotel requests
 7. Submit a real test request and verify receipt at `sara.rizzotti@fora.travel` before considering the form operational.
 
 After a future script change, choose **Deploy → Manage deployments**, edit the active web app, select **New version**, and deploy it. The `/exec` URL remains the same.
+
+The website temporarily mirrors the optional `helpWith` response into the legacy `employer` parameter so no response is lost before the updated script is deployed. After deploying this version of `Code.gs`, access-request emails label the response as “What they would like help with.”

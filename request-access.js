@@ -11,6 +11,8 @@
     const data=new FormData(form);
     if(data.get('website'))return;
     document.getElementById('submission-time').value=new Date().toISOString();
+    const helpWith=String(data.get('helpWith')||'').trim();
+    document.getElementById('legacy-employer').value=helpWith?'[Help requested] '+helpWith:'Not collected';
     const button=form.querySelector('button[type="submit"]');button.disabled=true;button.textContent='Sending…';
     try{
       const query=new URLSearchParams(new FormData(form));
