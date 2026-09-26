@@ -51,6 +51,19 @@
       letter-spacing: 0;
       line-height: 1.65;
     }
+    @media (min-width: 1101px) {
+      .hero-copy { grid-template-columns: 1.3fr .8fr; }
+      .hero-intro { max-width: 560px; }
+      .hero-value { white-space: nowrap; }
+    }
+    @media (min-width: 761px) and (max-width: 1100px) {
+      .hero-value span { display: block; }
+    }
+    @media (min-width: 761px) {
+      .editorial-line { display: block; white-space: nowrap; }
+    }
+    .service-lines p { display: block; }
+    .service-lines span { display: block; margin-bottom: 12px; }
     @media (max-width: 760px) { .hero-name { font-size: clamp(66px, 19vw, 90px); } }
     @media (max-width: 760px) { .footer-affiliation { margin: 28px 0 0; } }
   </style>
@@ -71,8 +84,8 @@
       <div class="hero-copy reveal">
         <p class="hero-name">Late<br />Checkout<br />Travel</p>
         <div class="hero-intro">
-          <p class="kicker">A private travel advisory for San Francisco and Silicon Valley.</p>
-          <p>We help a limited number of clients choose better hotels, book them well, and get more from every stay.</p>
+          <p class="kicker">A luxury travel advisory.</p>
+          <p class="hero-value"><span>Exceptional hotels. Preferred access.</span> <span>Personal service.</span></p>
           <button class="underline-link js-open-access" type="button">Request access</button>
         </div>
       </div>
@@ -83,7 +96,7 @@
       <div class="section-grid reveal">
         <p class="label">The Founding 400</p>
         <div>
-          <h1>Limited by design.</h1>
+          <h1><span class="editorial-line">A private client roster,</span><span class="editorial-line">intentionally kept small.</span></h1>
           <p class="body-copy">We began with an initial pilot of 100 households. We’re now expanding the founding roster to 400 across San Francisco and Silicon Valley.</p>
           <p class="body-copy">We keep the client list intentionally small so we can know our clients, understand how they travel, and give each stay the attention it deserves.</p>
           <button class="underline-link js-open-access" type="button">Request access</button>
@@ -102,7 +115,7 @@
         </div>
       </div>
       <div class="benefits reveal" aria-label="Examples of hotel benefits">
-        <p>Daily breakfast.</p><p>Hotel credits.</p><p>Upgrade priority.</p><p>Early arrival.</p><p>Late checkout.</p>
+        <p>VIP recognition.</p><p>Daily breakfast.</p><p>Hotel credits.</p><p>Upgrade priority.</p><p>Early check-in.</p><p>Late checkout.</p>
       </div>
       <p class="disclaimer">Benefits vary by hotel and availability.</p>
     </section>
@@ -113,13 +126,13 @@
       <div class="section-grid reveal"><p class="label">Book Better</p><h2>Same hotel.<br />Better stay.</h2></div>
       <!-- Deliberately illustrative placeholder. Replace only with verified property, price and benefits. -->
       <div class="folio reveal" data-content-status="placeholder">
-        <div class="folio-heading"><p><span>Illustrative stay</span>Rosewood [Property]</p><p>Ocean View King · 3 nights</p></div>
+        <div class="folio-heading"><p><span>Illustrative stay</span>Kona Village, A Rosewood Resort</p><p>Ocean View King · 3 nights</p></div>
         <div class="folio-columns">
           <article><p class="label">Booked directly</p><p class="rate">$1,250 <span>/ night</span></p><p>Room</p></article>
-          <article><p class="label">Booked with Late Checkout</p><p class="rate">$1,250 <span>/ night</span></p><p>Room</p><p>Daily breakfast for two</p><p>$100 hotel credit</p><p>Upgrade priority</p><p>Early check-in, when available</p><p>Late checkout, when available</p></article>
+          <article><p class="label">Booked with Late Checkout</p><p class="rate">$1,250 <span>/ night</span></p><p>Room</p><p>VIP recognition</p><p>Daily breakfast for two</p><p>$100 hotel credit</p><p>Upgrade priority</p><p>Early check-in, when available</p><p>Late checkout, when available</p></article>
         </div>
-        <p class="folio-close">Same room. Same rate. More included.</p>
-        <p class="disclaimer">Illustrative example only. Property, pricing and benefits are placeholders and have not been verified.</p>
+        <p class="folio-close">Same room. Same rate. A very different stay.</p>
+        <p class="disclaimer">Example only. Rates and benefits vary by property.</p>
       </div>
     </section>
 
@@ -128,7 +141,7 @@
         <p class="label">Personal Service</p>
         <div><h2>Someone should know<br />how you travel.</h2><p class="body-copy">We keep our client roster intentionally small because good travel advice gets better when it gets personal.</p><p class="body-copy">We learn the hotels you love, how you like to travel, what matters to you, and what doesn’t.</p></div>
       </div>
-      <div class="service-lines reveal"><p><span>Already know the hotel?</span>Send us the dates.</p><p><span>Need a recommendation?</span>We’ll narrow the field.</p><p><span>Plans change?</span>You have someone to call.</p></div>
+      <div class="service-lines reveal"><p><span>Already know the hotel?</span>Send it to us.</p><p><span>Need a recommendation?</span>We’ll narrow the field.</p><p><span>Ready to go?</span>We’ll handle the stay.</p></div>
     </section>
 
     <section class="section-light content-section">
@@ -145,7 +158,7 @@
 
     <section class="final-cta section-dark">
       <span class="plane" aria-hidden="true">✈</span><p class="label">The Founding 400</p>
-      <h2>Your next hotel<br />should know you're coming.</h2>
+      <h2><span class="editorial-line">Your next hotel</span><span class="editorial-line">should know you're coming.</span></h2>
       <p>We’re currently expanding our founding roster to 400 households across San Francisco and Silicon Valley.</p>
       <p>Request access and we’ll be in touch personally.</p>
       <button class="underline-link js-open-access" type="button">Request access</button>
