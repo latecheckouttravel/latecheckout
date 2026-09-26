@@ -49,6 +49,13 @@
   --container-max: 1360px;
 }
 
+@media (max-width: 700px) {
+  .page-shell .top-nav {
+    align-items: center;
+    gap: 18px;
+  }
+}
+
 *,
 *::before,
 *::after {
@@ -2531,6 +2538,114 @@ button:disabled {
   line-height: 1.5;
 }
 
+/* Shared site chrome for legacy editorial and destination pages. */
+.top-nav {
+  min-height: 88px;
+  padding: 0;
+  background: #1c1b19;
+  box-shadow: 0 0 0 100vmax #1c1b19;
+  color: #ece7df;
+}
+
+.brand-logo {
+  color: #ece7df;
+  font-size: 17px;
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+.top-nav a,
+.top-nav a:hover,
+.top-nav a.is-active {
+  color: #ece7df;
+}
+
+.nav-links {
+  gap: 28px;
+}
+
+.nav-links a {
+  padding-bottom: 4px;
+  border-bottom: 1px solid transparent;
+  font-size: 10px;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+}
+
+.nav-links a:hover,
+.nav-links a.is-active {
+  border-color: currentColor;
+}
+
+.site-footer {
+  background: #1c1b19;
+  color: #ece7df;
+  border-color: #3a3835;
+}
+
+.footer-wordmark,
+.footer-column a,
+.footer-column a:hover,
+.footer-heading,
+.footer-bottom p {
+  color: #ece7df;
+}
+
+.footer-description,
+.footer-legal-disclosure {
+  color: #aaa59d;
+}
+
+.footer-legal-disclosure {
+  max-width: 620px;
+  margin: 28px 0 0;
+  font-size: 11px;
+  line-height: 1.65;
+}
+
+.partners-strip,
+.footer-bottom {
+  border-color: #3a3835;
+}
+
+.partner-mark img {
+  filter: grayscale(1) brightness(0) invert(1);
+  opacity: 0.8;
+}
+
+@media (max-width: 980px) {
+  .top-nav {
+    min-height: 72px;
+    flex-wrap: nowrap;
+  }
+
+  .brand-logo {
+    font-size: 0;
+  }
+
+  .brand-logo::before {
+    content: "✈︎";
+    font: 16px Arial, Helvetica, sans-serif;
+  }
+
+  .nav-toggle {
+    display: none;
+  }
+
+  .nav-links {
+    display: flex;
+    width: auto;
+    flex-direction: row;
+    align-items: center;
+    gap: 18px;
+    padding: 0;
+  }
+
+  .nav-links a {
+    font-size: 9px;
+  }
+}
+
 @media (max-width: 700px) {
   .footer-inner {
     padding: 56px var(--space-3) var(--space-3);
@@ -2570,5 +2685,12 @@ button:disabled {
 
   .partners-eyebrow {
     margin-bottom: var(--space-4);
+  }
+}
+
+@media (max-width: 700px) {
+  .page-shell .top-nav {
+    align-items: center;
+    gap: 18px;
   }
 }
