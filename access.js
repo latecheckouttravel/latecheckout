@@ -24,8 +24,7 @@
     const button=form.querySelector('button[type="submit"]');button.disabled=true;button.textContent='Sending…';
     try{
       if(isAppsScript){
-        const payload=new URLSearchParams(new FormData(form)).toString();
-        await fetch(`${endpoint}?${payload}`,{method:'GET',mode:'no-cors'});
+        await fetch(endpoint,{method:'POST',body:new FormData(form),mode:'no-cors'});
       }else{
         const response=await fetch(endpoint,{method:'POST',body:new FormData(form),headers:{Accept:'application/json'}});
         if(!response.ok)throw new Error('We could not send your request. Please try again or email hello@latecheckouttravel.com.');

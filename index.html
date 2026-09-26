@@ -19,13 +19,13 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
   <meta name="theme-color" content="#1c1b19" />
-  <title>Late Checkout Travel | A Private Travel Advisory</title>
-  <meta name="description" content="A private travel advisory for San Francisco and Silicon Valley. Better hotels, thoughtful bookings and personal service." />
+  <title>Late Checkout Travel | A Private Hotel Advisory</title>
+  <meta name="description" content="A private hotel advisory for San Francisco and Silicon Valley. Exceptional hotels, preferred access and personal service." />
   <link rel="canonical" href="https://latecheckouttravel.com/" />
   <meta name="robots" content="index, follow, max-image-preview:large" />
   <meta property="og:site_name" content="Late Checkout Travel" />
   <meta property="og:title" content="Late Checkout Travel | The Hotel Should Know You're Coming" />
-  <meta property="og:description" content="A private travel advisory for San Francisco and Silicon Valley." />
+  <meta property="og:description" content="A private hotel advisory for San Francisco and Silicon Valley." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://latecheckouttravel.com/" />
   <meta property="og:image" content="https://latecheckouttravel.com/images/hero-main.jpg" />
@@ -64,10 +64,21 @@
     }
     .service-lines p { display: block; }
     .service-lines span { display: block; margin-bottom: 12px; }
+    @media (min-width: 761px) {
+      .founding .section-grid,
+      .difference .section-grid { grid-template-columns: 26% 1fr; }
+      .founding h1 { font-size: clamp(56px, 5.5vw, 92px); }
+      .difference h2 { font-size: clamp(56px, 6vw, 96px); }
+    }
     @media (max-width: 760px) { .hero-name { font-size: clamp(66px, 19vw, 90px); } }
     @media (max-width: 760px) { .footer-affiliation { margin: 28px 0 0; } }
+    @media (max-width: 760px) { .site-header .text-link { display: none; } }
+    @media (max-width: 760px) {
+      .editorial-line { display: block; max-width: 100%; white-space: normal; }
+      .hero-value span { display: inline; }
+    }
   </style>
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"TravelAgency","name":"Late Checkout Travel","url":"https://latecheckouttravel.com/","areaServed":"San Francisco Bay Area","description":"A private travel advisory for San Francisco and Silicon Valley."}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"TravelAgency","name":"Late Checkout Travel","url":"https://latecheckouttravel.com/","areaServed":"San Francisco Bay Area","description":"A private hotel advisory for San Francisco and Silicon Valley."}</script>
 </head>
 <body>
   <!-- Google Tag Manager (noscript) -->
@@ -80,11 +91,11 @@
   </header>
 
   <main id="top">
-    <section class="hero section-dark">
+    <section class="hero section-dark" id="welcome">
       <div class="hero-copy reveal">
         <p class="hero-name">Late<br />Checkout<br />Travel</p>
         <div class="hero-intro">
-          <p class="kicker">A luxury travel advisory.</p>
+          <p class="kicker">A luxury hotel advisory.</p>
           <p class="hero-value"><span>Exceptional hotels. Preferred access.</span> <span>Personal service.</span></p>
           <button class="underline-link js-open-access" type="button">Request access</button>
         </div>
@@ -92,7 +103,7 @@
       <figure class="hero-image reveal"><img src="/images/hero-main.jpg" alt="A quiet coastal terrace at sunset" width="1672" height="941" fetchpriority="high" /></figure>
     </section>
 
-    <section class="founding section-dark content-section">
+    <section class="founding section-dark content-section" id="founding-400">
       <div class="section-grid reveal">
         <p class="label">The Founding 400</p>
         <div>
@@ -105,7 +116,7 @@
       <p class="roster-number" aria-label="Founding roster expanding from 100 to 400 households"><span>100</span><i>/</i><span>400</span></p>
     </section>
 
-    <section class="difference section-light content-section">
+    <section class="difference section-light content-section" id="difference">
       <div class="section-grid reveal">
         <p class="label">The Late Checkout Difference</p>
         <div>
@@ -122,7 +133,7 @@
 
     <figure class="atmosphere"><img src="/images/about-pool.jpg" alt="A tranquil resort pool framed by palms and mountains" width="1800" height="1200" loading="lazy" /></figure>
 
-    <section class="booking section-dark content-section">
+    <section class="booking section-dark content-section" id="book-better">
       <div class="section-grid reveal"><p class="label">Book Better</p><h2>Same hotel.<br />Better stay.</h2></div>
       <!-- Deliberately illustrative placeholder. Replace only with verified property, price and benefits. -->
       <div class="folio reveal" data-content-status="placeholder">
@@ -136,7 +147,7 @@
       </div>
     </section>
 
-    <section class="service section-light content-section">
+    <section class="service section-light content-section" id="personal-service">
       <div class="section-grid reveal">
         <p class="label">Personal Service</p>
         <div><h2>Someone should know<br />how you travel.</h2><p class="body-copy">We keep our client roster intentionally small because good travel advice gets better when it gets personal.</p><p class="body-copy">We learn the hotels you love, how you like to travel, what matters to you, and what doesn’t.</p></div>
@@ -151,12 +162,12 @@
       </div>
     </section>
 
-    <section class="advisor section-light content-section">
+    <section class="advisor section-light content-section" id="founder">
       <div class="advisor-photo reveal"><img src="/images/about-sara.jpg" alt="Sara, founder and travel advisor at Late Checkout" width="1254" height="1254" loading="lazy" /></div>
-      <div class="advisor-copy reveal"><p class="label">Founder</p><h2>Meet the Founder.</h2><p class="body-copy">Sara is a San Francisco-based product executive, travel advisor and lifelong hotel obsessive.</p><p class="body-copy">She founded Late Checkout around a simple idea: travel is easier when someone knows you, and better when the hotel knows you’re coming.</p><p class="body-copy fora-affiliation">Late Checkout is an independent travel advisory within the Fora Travel network, giving clients access to preferred hotel partnerships and benefits around the world.</p></div>
+      <div class="advisor-copy reveal"><p class="label">Founder</p><h2>Meet the Founder.</h2><p class="body-copy">Sara is a San Francisco-based product executive, hotel advisor and lifelong hotel obsessive.</p><p class="body-copy">She founded Late Checkout around a simple idea: travel is easier when someone knows you, and better when the hotel knows you’re coming.</p><p class="body-copy fora-affiliation">Late Checkout is an independent hotel advisory within the Fora Travel network, giving clients access to preferred hotel partnerships and benefits around the world.</p></div>
     </section>
 
-    <section class="final-cta section-dark">
+    <section class="final-cta section-dark" id="request-access">
       <span class="plane" aria-hidden="true">✈</span><p class="label">The Founding 400</p>
       <h2><span class="editorial-line">Your next hotel</span><span class="editorial-line">should know you're coming.</span></h2>
       <p>We’re currently expanding our founding roster to 400 households across San Francisco and Silicon Valley.</p>
@@ -165,14 +176,14 @@
     </section>
   </main>
 
-  <footer><p>Late Checkout Travel<br />San Francisco</p><p class="footer-affiliation">Late Checkout is an independent travel advisory affiliated with Fora Travel, its host travel agency. Hotel benefits vary by property and availability.</p><nav aria-label="Footer"><a href="mailto:hello@latecheckouttravel.com">Contact</a><a href="/privacy.html">Privacy</a><a href="/terms.html">Terms</a></nav></footer>
+  <footer><p>Late Checkout Travel<br />San Francisco</p><p class="footer-affiliation">Late Checkout is an independent hotel advisory affiliated with Fora Travel, Inc., a Virtuoso member. California Seller of Travel Registration No. 2151995-50 · Florida Seller of Travel Registration No. ST43973 · Washington UBI No. 605329242. Registration as a seller of travel does not constitute approval by the State of California.</p><nav aria-label="Footer"><a href="mailto:hello@latecheckouttravel.com">Contact</a><a href="/faq/">FAQ</a><a href="/privacy/">Privacy</a><a href="/terms/">Terms</a></nav></footer>
 
   <dialog class="access-dialog" id="access-dialog" aria-labelledby="access-title">
     <button class="dialog-close" type="button" aria-label="Close request form">Close</button>
     <div class="dialog-inner">
       <p class="label">The Founding 400</p><h2 id="access-title">Request access to<br />Late Checkout.</h2>
       <p class="dialog-intro">We’re currently reviewing requests for a limited number of relationships within our founding roster.</p>
-      <form id="access-form" action="https://script.google.com/macros/s/AKfycbz9q_LZ3VtMboPw2aeLXlnCoz0puKk5Nf2hnk5RaFL7A_a1Sh2BKVWIEpht-KwzYMqMAw/exec" method="post">
+      <form id="access-form" action="https://script.google.com/macros/s/AKfycbyfFrxrfak91Lct-aHEc4lMVWiT-p340R4gguMU42_hWf39cgVgK7iYkuJe6EuSIvD7aQ/exec" method="post">
         <input type="hidden" name="formType" value="access" />
         <div class="form-row"><label>First name<input name="firstName" autocomplete="given-name" required /></label><label>Last name<input name="lastName" autocomplete="family-name" required /></label></div>
         <label>Email address<input type="email" name="email" autocomplete="email" required /></label>
