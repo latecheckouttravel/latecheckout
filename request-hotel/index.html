@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#ece7df" />
+  <title>Request a Hotel | Late Checkout Travel</title>
+  <meta name="description" content="Send Late Checkout your hotel or trip idea, dates and preferences for personal hotel recommendations and booking support." />
+  <link rel="canonical" href="https://latecheckouttravel.com/request-hotel/" />
+  <meta name="robots" content="noindex, follow" />
+  <link rel="icon" type="image/svg+xml" sizes="any" href="/favicon-plane.svg?v=20260925" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Playfair+Display:wght@500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/legal.css?v=20260925" />
+  <style>
+    .hotel-main{width:min(1040px,92vw);padding:clamp(70px,9vw,125px) 0}.hotel-main h1{max-width:900px;margin:18px 0 28px}.hotel-intro{max-width:620px;margin:0 0 65px;font-size:clamp(17px,1.5vw,21px)}.hotel-form{max-width:850px}.hotel-form label{display:block;margin-bottom:34px;text-transform:uppercase;letter-spacing:.12em;font-size:9px}.form-row{display:grid;grid-template-columns:1fr 1fr;gap:30px}.hotel-form input,.hotel-form textarea{display:block;width:100%;border:0;border-bottom:1px solid #8f8980;border-radius:0;background:transparent;color:#1c1b19;padding:12px 0;font:400 18px var(--sans);outline:none}.hotel-form textarea{min-height:120px;resize:vertical}.hotel-form input:focus,.hotel-form textarea:focus{border-color:#1c1b19;border-width:2px}.submit-button{margin-top:18px;border:1px solid #1c1b19;background:#1c1b19;color:#ece7df;padding:16px 30px;text-transform:uppercase;letter-spacing:.12em;font-size:10px;cursor:pointer}.submit-button:disabled{opacity:.5}.form-status{min-height:25px;font-size:13px}.form-status.error{color:#8a2f25}.honeypot{position:absolute;left:-9999px}.success-state{display:none;max-width:760px}.success-state.is-visible{display:block}.success-state h2{font:500 clamp(45px,6vw,82px)/1 var(--serif);letter-spacing:-.04em}@media(max-width:700px){.hotel-main{width:auto;margin:0 25px;padding:58px 0 80px}.hotel-main h1{font-size:clamp(48px,13vw,64px);margin-bottom:24px}.hotel-intro{margin-bottom:50px}.form-row{display:block}}
+  </style>
+</head>
+<body>
+  <header class="legal-header"><a class="legal-brand" href="/"><span aria-hidden="true">&#x2708;&#xFE0E;</span><span>Late Checkout</span></a><nav class="legal-nav"><a href="/journal/">Journal</a><a aria-current="page" href="/client-desk/">Client Desk</a></nav></header>
+  <main class="legal-main hotel-main">
+    <div id="hotel-form-state">
+      <p class="legal-label">The Client Desk</p>
+      <h1>Request a hotel.</h1>
+      <p class="hotel-intro">Tell us what you have in mind. We’ll review the details and follow up personally.</p>
+      <form class="hotel-form" id="hotel-form" action="https://script.google.com/macros/s/AKfycbyfFrxrfak91Lct-aHEc4lMVWiT-p340R4gguMU42_hWf39cgVgK7iYkuJe6EuSIvD7aQ/exec" method="get">
+        <input type="hidden" name="formType" value="hotel" />
+        <div class="form-row"><label>Client name<input name="clientName" autocomplete="name" required /></label><label>Client email<input type="email" name="clientEmail" autocomplete="email" required /></label></div>
+        <label>Hotel or trip idea<input name="hotelIdea" placeholder="Hotel, destination or what you have in mind" required /></label>
+        <label>Dates<input name="dates" placeholder="Exact or approximate dates" required /></label>
+        <label>Notes<textarea name="notes" placeholder="Travelers, room preferences, occasion or anything else we should know"></textarea></label>
+        <label class="honeypot" aria-hidden="true">Company website<input name="website" tabindex="-1" autocomplete="off" /></label>
+        <input type="hidden" name="source" value="Request a Hotel" /><input type="hidden" name="page" id="hotel-page" /><input type="hidden" name="submitted" id="hotel-submitted" />
+        <button class="submit-button" type="submit">Send hotel request</button><p class="form-status" id="hotel-status" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+    <div class="success-state" id="hotel-success" tabindex="-1"><p class="legal-label">Request received</p><h2>We’re on it.</h2><p>We’ll review your hotel request and follow up personally.</p></div>
+  </main>
+  <footer class="legal-footer"><p>Late Checkout Travel<br />San Francisco</p><p class="footer-affiliation">Late Checkout is an independent hotel advisory affiliated with Fora Travel, Inc., a Virtuoso member. California Seller of Travel Registration No. 2151995-50 · Florida Seller of Travel Registration No. ST43973 · Washington UBI No. 605329242. Registration as a seller of travel does not constitute approval by the State of California.</p><nav aria-label="Footer"><a href="/journal/">Journal</a><a href="/client-desk/">Client Desk</a><a href="mailto:hello@latecheckouttravel.com">Contact</a><a href="/faq/">FAQ</a><a href="/privacy/">Privacy</a><a href="/terms/">Terms</a></nav></footer>
+  <script src="/request-hotel.js?v=20260926"></script>
+</body>
+</html>

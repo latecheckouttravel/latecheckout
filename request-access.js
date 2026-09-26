@@ -13,7 +13,11 @@
     document.getElementById('submission-time').value=new Date().toISOString();
     const button=form.querySelector('button[type="submit"]');button.disabled=true;button.textContent='Sending…';
     try{
-      await fetch(form.action,{method:'POST',body:new FormData(form),mode:'no-cors'});
+      const query=new URLSearchParams(new FormData(form));
+      const response=await fetch(form.action+'?'+query.toString(),{method:'GET'});
+      if(!response.ok)throw new Error('The request could not be delivered.');
+      const result=await response.json();
+      if(!result.ok)throw new Error(result.error||'The request could not be delivered.');
       document.getElementById('form-state').hidden=true;success.classList.add('is-visible');success.focus();
     }catch(error){status.textContent='We could not send your request. Please try again or email sara@latecheckouttravel.com.';status.classList.add('error')}
     finally{button.disabled=false;button.textContent='Request access'}

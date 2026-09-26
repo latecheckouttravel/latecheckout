@@ -21,28 +21,9 @@
   <main class="legal-main member-main">
     <p class="legal-label">The Client Desk</p>
     <h1>Where should we send you next?</h1>
-    <div class="member-actions"><button class="member-primary" id="open-hotel-form" type="button">Request a hotel</button><a class="member-secondary" href="/request-access/">New here? Request access</a></div>
+    <div class="member-actions"><a class="member-primary" href="/request-hotel/">Request a hotel</a><a class="member-secondary" href="/request-access/">New here? Request access</a></div>
     <div class="member-copy"><p class="member-intro">Already a Late Checkout client? Send us your next hotel request. Need a recommendation? Tell us where you’re going and we’ll narrow the field.</p><p class="member-note">Self-service hotel booking is coming soon. Until then, every client request is reviewed personally.</p></div>
   </main>
   <footer class="legal-footer"><p>Late Checkout Travel<br />San Francisco</p><p class="footer-affiliation">Late Checkout is an independent hotel advisory affiliated with Fora Travel, Inc., a Virtuoso member. California Seller of Travel Registration No. 2151995-50 · Florida Seller of Travel Registration No. ST43973 · Washington UBI No. 605329242. Registration as a seller of travel does not constitute approval by the State of California.</p><nav aria-label="Footer"><a href="/journal/">Journal</a><a href="/client-desk/">Client Desk</a><a href="mailto:hello@latecheckouttravel.com">Contact</a><a href="/faq/">FAQ</a><a href="/privacy/">Privacy</a><a href="/terms/">Terms</a></nav></footer>
-  <dialog class="hotel-dialog" id="hotel-dialog" aria-labelledby="hotel-form-title">
-    <button class="dialog-close" type="button" aria-label="Close hotel request form">Close</button>
-    <div class="dialog-inner">
-      <p class="legal-label">The Client Desk</p><h2 id="hotel-form-title">Request a hotel.</h2>
-      <p class="dialog-intro">Tell us what you have in mind. We’ll review the details and follow up personally.</p>
-      <form class="hotel-form" id="hotel-form" action="https://script.google.com/macros/s/AKfycbyfFrxrfak91Lct-aHEc4lMVWiT-p340R4gguMU42_hWf39cgVgK7iYkuJe6EuSIvD7aQ/exec" method="post">
-        <input type="hidden" name="formType" value="hotel" />
-        <div class="form-row"><label>Client name<input name="clientName" autocomplete="name" required /></label><label>Client email<input type="email" name="clientEmail" autocomplete="email" required /></label></div>
-        <label>Hotel or trip idea<input name="hotelIdea" placeholder="Hotel, destination or what you have in mind" required /></label>
-        <label>Dates<input name="dates" placeholder="Exact or approximate dates" required /></label>
-        <label>Notes<textarea name="notes" placeholder="Travelers, room preferences, occasion or anything else we should know"></textarea></label>
-        <label class="honeypot" aria-hidden="true">Company website<input name="website" tabindex="-1" autocomplete="off" /></label>
-        <input type="hidden" name="source" value="Client Desk" /><input type="hidden" name="page" id="hotel-page" /><input type="hidden" name="submitted" id="hotel-submitted" />
-        <button class="submit-button" type="submit">Send hotel request</button><p class="form-status" id="hotel-status" role="status" aria-live="polite"></p>
-      </form>
-      <div class="success-state" id="hotel-success" tabindex="-1"><p class="legal-label">Request received</p><h2>We’re on it.</h2><p>We’ll review your hotel request and follow up personally.</p></div>
-    </div>
-  </dialog>
-  <script src="/client-desk.js?v=20260925"></script>
 </body>
 </html>
