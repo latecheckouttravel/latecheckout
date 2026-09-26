@@ -24,9 +24,9 @@
       <div class="access-intro"><p>Join the Late Checkout client roster for personal hotel advice, preferred benefits and support before, during and after your stay.</p><p>Tell us a little about how you travel. We personally review every request and will be in touch.</p></div>
       <form class="access-form" id="access-form" action="https://script.google.com/macros/s/AKfycbyfFrxrfak91Lct-aHEc4lMVWiT-p340R4gguMU42_hWf39cgVgK7iYkuJe6EuSIvD7aQ/exec" method="post">
         <input type="hidden" name="formType" value="access" />
+        <input type="hidden" name="employer" value="Not collected" />
         <div class="form-row"><label>First name<input name="firstName" autocomplete="given-name" required /></label><label>Last name<input name="lastName" autocomplete="family-name" required /></label></div>
         <label>Email address<input type="email" name="email" autocomplete="email" required /></label>
-        <label>Current employer<input name="employer" autocomplete="organization" required /></label>
         <label>Typical nightly hotel budget<select name="hotelSpend" required><option value="">Select a range</option><option>Under $500</option><option>$500–$999</option><option>$1,000–$1,499</option><option>$1,500–$2,499</option><option>$2,500+</option></select></label>
         <label class="honeypot" aria-hidden="true">Company website<input name="website" tabindex="-1" autocomplete="off" /></label>
         <input type="hidden" name="source" id="referral-source" /><input type="hidden" name="page" id="submission-page" /><input type="hidden" name="submitted" id="submission-time" />
