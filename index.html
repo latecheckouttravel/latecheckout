@@ -19,19 +19,24 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
   <meta name="theme-color" content="#1c1b19" />
-  <title>Late Checkout Travel | A Private Hotel Advisory</title>
-  <meta name="description" content="A private hotel advisory for San Francisco and Silicon Valley. Exceptional hotels, preferred access and personal service." />
+  <title>Late Checkout Travel | Personal Hotel Advisory</title>
+  <meta name="description" content="Late Checkout Travel is a personal hotel advisory based in San Francisco, helping clients choose and book exceptional hotels with preferred benefits." />
   <link rel="canonical" href="https://latecheckouttravel.com/" />
   <meta name="robots" content="index, follow, max-image-preview:large" />
   <meta property="og:site_name" content="Late Checkout Travel" />
-  <meta property="og:title" content="Late Checkout Travel | The Hotel Should Know You're Coming" />
-  <meta property="og:description" content="A private hotel advisory for San Francisco and Silicon Valley." />
+  <meta property="og:title" content="Late Checkout Travel | Personal Hotel Advisory" />
+  <meta property="og:description" content="A personal hotel advisory based in San Francisco, helping clients choose and book exceptional hotels with preferred benefits." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://latecheckouttravel.com/" />
   <meta property="og:image" content="https://latecheckouttravel.com/images/hero-main.jpg" />
   <meta name="twitter:card" content="summary_large_image" />
-  <link rel="icon" type="image/svg+xml" sizes="any" href="/favicon-plane.svg?v=20260925" />
-  <link rel="shortcut icon" href="/favicon-plane.svg?v=20260925" />
+  <meta name="twitter:title" content="Late Checkout Travel | Personal Hotel Advisory" />
+  <meta name="twitter:description" content="A personal hotel advisory based in San Francisco, helping clients choose and book exceptional hotels with preferred benefits." />
+  <meta name="twitter:image" content="https://latecheckouttravel.com/images/hero-main.jpg" />
+  <link rel="icon" href="/favicon.ico" sizes="48x48" />
+  <link rel="icon" type="image/svg+xml" sizes="any" href="/favicon-plane.svg" />
+  <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Playfair+Display:wght@500&display=swap" rel="stylesheet" />
@@ -93,7 +98,48 @@
       .hero-value span { display: inline; }
     }
   </style>
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"TravelAgency","name":"Late Checkout Travel","url":"https://latecheckouttravel.com/","areaServed":"San Francisco Bay Area","description":"A private hotel advisory for San Francisco and Silicon Valley."}</script>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "TravelAgency",
+          "@id": "https://latecheckouttravel.com/#organization",
+          "name": "Late Checkout Travel",
+          "alternateName": "Late Checkout",
+          "url": "https://latecheckouttravel.com/",
+          "logo": "https://latecheckouttravel.com/favicon-96x96.png",
+          "image": "https://latecheckouttravel.com/images/hero-main.jpg",
+          "description": "A personal hotel advisory based in San Francisco, helping clients choose and book exceptional hotels with preferred benefits.",
+          "email": "hello@latecheckouttravel.com",
+          "founder": {
+            "@type": "Person",
+            "name": "Sara Rizzotti"
+          },
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "San Francisco",
+            "addressRegion": "CA",
+            "addressCountry": "US"
+          },
+          "sameAs": [
+            "https://www.linkedin.com/company/late-checkout-travel",
+            "https://latecheckouttravel.substack.com/"
+          ]
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://latecheckouttravel.com/#website",
+          "url": "https://latecheckouttravel.com/",
+          "name": "Late Checkout Travel",
+          "alternateName": "Late Checkout",
+          "publisher": {
+            "@id": "https://latecheckouttravel.com/#organization"
+          }
+        }
+      ]
+    }
+  </script>
 </head>
 <body>
   <!-- Google Tag Manager (noscript) -->
