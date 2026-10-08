@@ -1,4 +1,4 @@
-.fit-key{display:grid;grid-template-columns:repeat(3,1fr);gap:0;margin:7vw 0 4vw;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.options-heading h2{margin:0;font:500 clamp(58px,8vw,118px)/.95 var(--serif);letter-spacing:-.05em}.fit-key{display:grid;grid-template-columns:repeat(3,1fr);gap:0;margin:5vw 0 4vw;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
 .fit-key>div{padding:28px 3vw}.fit-key>div+div{border-left:1px solid var(--line)}
 .fit-key .fit-method{grid-column:1/-1;display:grid;grid-template-columns:22% 1fr;gap:4vw;padding:32px 0;border-bottom:1px solid var(--line)}
 .fit-method p{margin:0}.fit-method p:last-child{max-width:850px;font-size:15px;line-height:1.7}
